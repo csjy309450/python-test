@@ -80,6 +80,7 @@ data = generate_synthetic_data()
 proj = proj_operator * data.ravel()[:, np.newaxis]
 proj += 0.15 * np.random.randn(*proj.shape)
 
+
 # Reconstruction with L2 (Ridge) penalization
 rgr_ridge = Ridge(alpha=0.2)
 rgr_ridge.fit(proj_operator, proj.ravel())
@@ -91,6 +92,7 @@ rec_l2 = rgr_ridge.coef_.reshape(l, l)
 rgr_lasso = Lasso(alpha=0.001)
 rgr_lasso.fit(proj_operator, proj.ravel())
 rec_l1 = rgr_lasso.coef_.reshape(l, l)
+
 
 plt.figure(figsize=(8, 3.3))
 plt.subplot(131)
@@ -104,6 +106,11 @@ plt.axis('off')
 plt.subplot(133)
 plt.imshow(rec_l1, cmap=plt.cm.gray, interpolation='nearest')
 plt.title('L1 penalization')
+plt.axis('off')
+plt.figure()
+plt.subplot(131)
+plt.imshow(proj, cmap=plt.cm.gray, interpolation='nearest')
+plt.title('proj')
 plt.axis('off')
 
 plt.subplots_adjust(hspace=0.01, wspace=0.01, top=1, bottom=0, left=0,
