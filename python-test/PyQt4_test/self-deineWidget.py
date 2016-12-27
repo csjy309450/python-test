@@ -21,6 +21,7 @@ class Example(QtGui.QWidget):
         self.setGeometry(300, 300, 250, 150)
         self.setWindowTitle('Icon')
         self.setWindowIcon(QtGui.QIcon('Icon.png'))
+        btn = QtGui.QPushButton('OK', self)
         self.show()
 
 """
@@ -120,10 +121,198 @@ class Example4(QtGui.QMainWindow):
     def OnChanged(self):
         self.statusBar().showMessage('Exit application')
 
+class Example5(QtGui.QWidget):
+
+    def __init__(self):
+        super(Example5, self).__init__()
+
+        self.initUI()
+
+    def initUI(self):
+
+        okButton = QtGui.QPushButton("OK")
+        cancelButton = QtGui.QPushButton("Cancel")
+
+        hbox = QtGui.QHBoxLayout()
+        hbox.addStretch(1)
+        hbox.addWidget(okButton)
+        hbox.addWidget(cancelButton)
+
+        vbox = QtGui.QVBoxLayout()
+        vbox.addStretch(1)
+        vbox.addLayout(hbox)
+
+        self.setLayout(vbox)
+
+        self.setGeometry(300, 300, 300, 150)
+        self.setWindowTitle('Buttons')
+        self.show()
+
+class Example6(QtGui.QWidget):
+
+    def __init__(self):
+        super(Example6, self).__init__()
+
+        self.initUI()
+
+    def initUI(self):
+
+        grid = QtGui.QGridLayout()
+        self.setLayout(grid)
+
+        names = ['Cls', 'Bck', '', 'Close',
+                 '7', '8', '9', '/',
+                '4', '5', '6', '*',
+                 '1', '2', '3', '-',
+                '0', '.', '=', '+']
+
+        positions = [(i,j) for i in range(5) for j in range(4)]
+
+        for position, name in zip(positions, names):
+
+            if name == '':
+                continue
+            button = QtGui.QPushButton(name)
+            grid.addWidget(button, *position)
+
+        self.move(300, 150)
+        self.setWindowTitle('Calculator')
+        self.show()
+
+class Example7(QtGui.QWidget):
+
+    def __init__(self):
+        super(Example7, self).__init__()
+
+        self.initUI()
+
+    def initUI(self):
+
+        lcd = QtGui.QLCDNumber(self)
+        sld = QtGui.QSlider(QtCore.Qt.Horizontal, self)
+
+        vbox = QtGui.QVBoxLayout()
+        vbox.addWidget(lcd)
+        vbox.addWidget(sld)
+
+        self.setLayout(vbox)
+        sld.valueChanged.connect(lcd.display)
+
+        self.setGeometry(300, 300, 250, 150)
+        self.setWindowTitle('Signal & slot')
+        self.show()
+
+class Example8(QtGui.QWidget):
+
+    def __init__(self):
+        super(Example8, self).__init__()
+
+        self.initUI()
+
+    def initUI(self):
+
+        col = QtGui.QColor(0, 0, 0)
+
+        self.btn = QtGui.QPushButton('Dialog', self)
+        self.btn.move(20, 20)
+
+        self.btn.clicked.connect(self.showDialog)
+
+        self.frm = QtGui.QFrame(self)
+        self.frm.setStyleSheet("QWidget { background-color: %s }"
+            % col.name())
+        self.frm.setGeometry(130, 22, 100, 100)
+
+        self.setGeometry(300, 300, 250, 180)
+        self.setWindowTitle('Color dialog')
+        self.show()
+
+    def showDialog(self):
+
+        col = QtGui.QColorDialog.getColor()
+
+        if col.isValid():
+            self.frm.setStyleSheet("QWidget { background-color: %s }"
+                % col.name())
+
+class Example9(QtGui.QWidget):
+
+    def __init__(self):
+        super(Example9, self).__init__()
+
+        self.initUI()
+
+    def initUI(self):
+
+        vbox = QtGui.QVBoxLayout()
+
+        btn = QtGui.QPushButton('Dialog', self)
+        btn.setSizePolicy(QtGui.QSizePolicy.Fixed,
+            QtGui.QSizePolicy.Fixed)
+
+        btn.move(20, 20)
+
+        vbox.addWidget(btn)
+
+        btn.clicked.connect(self.showDialog)
+
+        self.lbl = QtGui.QLabel('Knowledge only matters', self)
+        self.lbl.move(130, 20)
+
+        vbox.addWidget(self.lbl)
+        self.setLayout(vbox)
+
+        self.setGeometry(300, 300, 250, 180)
+        self.setWindowTitle('Font dialog')
+        self.show()
+
+    def showDialog(self):
+
+        font, ok = QtGui.QFontDialog.getFont()
+        if ok:
+            self.lbl.setFont(font)
+
+class Example10(QtGui.QMainWindow):
+
+    def __init__(self):
+        super(Example10, self).__init__()
+
+        self.initUI()
+
+    def initUI(self):
+
+        self.textEdit = QtGui.QTextEdit()
+        self.setCentralWidget(self.textEdit)
+        self.statusBar()
+
+        openFile = QtGui.QAction(QtGui.QIcon('open.png'), 'Open', self)
+        openFile.setShortcut('Ctrl+O')
+        openFile.setStatusTip('Open new File')
+        openFile.triggered.connect(self.showDialog)
+
+        menubar = self.menuBar()
+        fileMenu = menubar.addMenu('&File')
+        fileMenu.addAction(openFile)
+
+        self.setGeometry(300, 300, 350, 300)
+        self.setWindowTitle('File dialog')
+        self.show()
+
+    def showDialog(self):
+
+        fname = QtGui.QFileDialog.getOpenFileName(self, 'Open file',
+                '/home')
+        print type(fname), fname
+
+        f = open(fname, 'r')
+        with f:
+            data = f.read()
+            self.textEdit.setText(data)
+
 def main():
 
     app = QtGui.QApplication(sys.argv)
-    ex = Example4()
+    ex = Example10()
     sys.exit(app.exec_())
 
 
