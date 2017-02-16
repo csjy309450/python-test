@@ -7,6 +7,9 @@ import matplotlib
 import pandas
 import sympy
 import nose
+import wx
+import caffe
+import tensorflow
 """
 NumPy系统是Python的一种开源的数值计算扩展。这种工具可用来存储和处理大型矩阵，比Python自身的嵌套列表（nested list structure)结构要高效的多（该结构也可以用来表示矩阵（matrix））。据说NumPy将Python相当于变成一种免费的更强大的MatLab系统。
 
@@ -27,3 +30,6 @@ print "matplotlib (", matplotlib.__version__, ")"
 print "pandas (", pandas.__version__, ")"
 print "sympy (", sympy.__version__, ")"
 print "nose (", nose.__version__, ")"
+print "wx (", wx.VERSION, ")"
+print "caffe(", caffe.__version__, ")"
+print "tensorflow(", tensorflow.VERSION, ")"
