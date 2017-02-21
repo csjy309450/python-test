@@ -300,19 +300,310 @@ class Example10(QtGui.QMainWindow):
 
     def showDialog(self):
 
-        fname = QtGui.QFileDialog.getOpenFileName(self, 'Open file',
-                '/home')
-        print type(fname), fname
+        fname = QtGui.QFileDialog.getOpenFileName(self, 'Open file', '/home')
+        if fname != '':
+            print type(fname), fname
 
-        f = open(fname, 'r')
-        with f:
-            data = f.read()
-            self.textEdit.setText(data)
+            f = open(fname, 'r')
+            with f:
+                data = f.read()
+                self.textEdit.setText(data)
+
+class Example11(QtGui.QWidget):
+
+    def __init__(self):
+        super(Example11, self).__init__()
+
+        self.initUI()
+
+    def initUI(self):
+
+        self.setGeometry(300, 300, 250, 150)
+        self.setWindowTitle('Checkbox')
+
+        self.cb = QtGui.QCheckBox('Show title', self)
+        self.cb.setFocusPolicy(QtCore.Qt.NoFocus)
+        self.cb.move(10, 10)
+        self.cb.toggle()
+        # self.connect(self.cb, QtCore.SIGNAL('stateChanged(int)'), self.changeTitle)
+        self.cb.stateChanged.connect(self.changeTitle)
+        self.show()
+
+    def changeTitle(self, value):
+
+        if self.cb.isChecked():
+            self.setWindowTitle('Checkbox')
+        else:
+            self.setWindowTitle('changed')
+
+class Example12(QtGui.QWidget):
+
+    def __init__(self):
+        super(Example12, self).__init__()
+
+        self.initUI()
+        self.show()
+
+    def initUI(self):
+
+        self.color = QtGui.QColor(0, 0, 0)
+
+        self.red = QtGui.QPushButton('Red', self)
+        self.red.setCheckable(True)
+        self.red.move(10, 10)
+
+        self.connect(self.red, QtCore.SIGNAL('clicked()'), self.setColor)
+
+        self.green = QtGui.QPushButton('Green', self)
+        self.green.setCheckable(True)
+        self.green.move(10, 60)
+
+        self.connect(self.green, QtCore.SIGNAL('clicked()'), self.setColor)
+
+        self.blue = QtGui.QPushButton('Blue', self)
+        self.blue.setCheckable(True)
+        self.blue.move(10, 110)
+
+        self.connect(self.blue, QtCore.SIGNAL('clicked()'), self.setColor)
+
+        self.square = QtGui.QWidget(self)
+        self.square.setGeometry(150, 20, 100, 100)
+        self.square.setStyleSheet("QWidget { background-color: %s }" %
+            self.color.name())
+
+        self.setWindowTitle('ToggleButton')
+        self.setGeometry(300, 300, 280, 170)
+
+
+    def setColor(self):
+
+        source = self.sender()
+
+        if source.text() == "Red":
+            if self.red.isChecked():
+                self.color.setRed(255)
+            else: self.color.setRed(0)
+
+        elif source.text() == "Green":
+            if self.green.isChecked():
+                self.color.setGreen(255)
+            else: self.color.setGreen(0)
+
+        else:
+            if self.blue.isChecked():
+                self.color.setBlue(255)
+            else: self.color.setBlue(0)
+
+        self.square.setStyleSheet("QWidget { background-color: %s }" %
+            self.color.name())
+
+class Example13(QtGui.QWidget):
+
+    def __init__(self):
+        super(Example13, self).__init__()
+
+        self.initUI()
+        self.show()
+
+    def initUI(self):
+
+        slider = QtGui.QSlider(QtCore.Qt.Horizontal, self)
+        slider.setFocusPolicy(QtCore.Qt.NoFocus)
+        slider.setGeometry(30, 40, 100, 30)
+        # self.connect(slider, QtCore.SIGNAL('valueChanged(int)'), self.changeValue)
+        slider.valueChanged.connect(self.changeValue)
+
+        self.label = QtGui.QLabel(self)
+        self.label.setPixmap(QtGui.QPixmap('1.bmp'))
+        self.label.setGeometry(160, 40, 80, 30)
+
+        self.setWindowTitle('Slider')
+        self.setGeometry(300, 300, 250, 150)
+
+
+    def changeValue(self, value):
+
+        if value == 0:
+            self.label.setPixmap(QtGui.QPixmap('1.bmp'))
+        elif value > 0 and value <= 30:
+            self.label.setPixmap(QtGui.QPixmap('2.bmp'))
+        elif value > 30 and value < 80:
+            self.label.setPixmap(QtGui.QPixmap('3.bmp'))
+        else:
+            self.label.setPixmap(QtGui.QPixmap('4.bmp'))
+
+class Example14(QtGui.QWidget):
+
+    def __init__(self):
+        super(Example14, self).__init__()
+
+        self.initUI()
+        self.show()
+
+    def initUI(self):
+
+        self.pbar = QtGui.QProgressBar(self)
+        self.pbar.setGeometry(30, 40, 200, 25)
+
+        self.button = QtGui.QPushButton('Start', self)
+        self.button.setFocusPolicy(QtCore.Qt.NoFocus)
+        self.button.move(40, 80)
+
+        self.connect(self.button, QtCore.SIGNAL('clicked()'),
+            self.doAction)
+
+        self.timer = QtCore.QBasicTimer()
+        self.step = 0
+
+        self.setWindowTitle('ProgressBar')
+        self.setGeometry(300, 300, 250, 150)
+
+
+    def timerEvent(self, event):
+
+        if self.step >= 100:
+            self.timer.stop()
+            return
+
+        self.step = self.step + 1
+        self.pbar.setValue(self.step)
+
+    def doAction(self):
+
+        if self.timer.isActive():
+            self.timer.stop()
+            self.button.setText('Start')
+        else:
+            self.timer.start(100, self)
+            self.button.setText('Stop')
+
+class Example15(QtGui.QWidget):
+
+    def __init__(self):
+        super(Example15, self).__init__()
+
+        self.initUI()
+        self.show()
+
+    def initUI(self):
+
+        self.cal = QtGui.QCalendarWidget(self)
+        self.cal.setGridVisible(True)
+        self.cal.move(20, 20)
+        self.connect(self.cal, QtCore.SIGNAL('selectionChanged()'),
+            self.showDate)
+
+
+        self.label = QtGui.QLabel(self)
+        date = self.cal.selectedDate()
+        self.label.setText(str(date.toPyDate()))
+        self.label.move(130, self.cal.minimumSizeHint().height() + self.cal.height())
+
+        self.setWindowTitle('Calendar')
+        self.setGeometry(300, 300, 350, 300)
+
+    def showDate(self):
+
+        date = self.cal.selectedDate()
+        self.label.setText(str(date.toPyDate()))
+
+class Example16(QtGui.QWidget):
+
+    def __init__(self):
+        super(Example16, self).__init__()
+
+        self.initUI()
+        self.show()
+
+    def initUI(self):
+
+        # hbox = QtGui.QHBoxLayout(self)
+        pixmap = QtGui.QPixmap("Icon.png")
+
+        label = QtGui.QLabel(self)
+        label.setPixmap(pixmap)
+
+        # hbox.addWidget(label)
+        # self.setLayout(hbox)
+
+        self.setWindowTitle("Rotunda in Skalica")
+        self.move(250, 200)
+
+class Example17(QtGui.QWidget):
+
+    def __init__(self):
+        super(Example17, self).__init__()
+
+        self.initUI()
+        self.show()
+
+
+    def initUI(self):
+
+        hbox = QtGui.QHBoxLayout(self)
+
+        topleft = QtGui.QFrame(self)
+        topleft.setFrameShape(QtGui.QFrame.StyledPanel)
+
+        topright = QtGui.QFrame(self)
+        topright.setFrameShape(QtGui.QFrame.StyledPanel)
+
+        bottom = QtGui.QFrame(self)
+        bottom.setFrameShape(QtGui.QFrame.StyledPanel)
+
+        splitter1 = QtGui.QSplitter(QtCore.Qt.Horizontal)
+        splitter1.addWidget(topleft)
+        splitter1.addWidget(topright)
+
+        splitter2 = QtGui.QSplitter(QtCore.Qt.Vertical)
+        splitter2.addWidget(splitter1)
+        splitter2.addWidget(bottom)
+
+        hbox.addWidget(splitter2)
+        self.setLayout(hbox)
+
+        self.setWindowTitle('QSplitter')
+        QtGui.QApplication.setStyle(QtGui.QStyleFactory.create('Cleanlooks'))
+        self.setGeometry(250, 200, 350, 250)
+
+class Example18(QtGui.QWidget):
+
+    def __init__(self):
+        super(Example18, self).__init__()
+
+        self.initUI()
+        self.show()
+
+
+    def initUI(self):
+
+        self.label = QtGui.QLabel("Ubuntu", self)
+
+        combo = QtGui.QComboBox(self)
+        combo.addItem("Ubuntu")
+        combo.addItem("Mandriva")
+        combo.addItem("Fedora")
+        combo.addItem("Red Hat")
+        combo.addItem("Gentoo")
+
+        combo.move(50, 50)
+        self.label.move(50, 150)
+
+        self.connect(combo, QtCore.SIGNAL('activated(QString)'),
+            self.onActivated)
+
+        self.setGeometry(250, 200, 350, 250)
+        self.setWindowTitle('QComboBox')
+
+    def onActivated(self, text):
+
+        self.label.setText(text)
+        self.label.adjustSize()
 
 def main():
 
     app = QtGui.QApplication(sys.argv)
-    ex = Example10()
+    ex = Example18()
     sys.exit(app.exec_())
 
 
