@@ -49,6 +49,7 @@ LOAD_DYNAMIC_TO_MEMORY = 2
 class BatchReader:
     def __init__(self, image_path, list_files, reSize, batchSize=None, _loadMode=LOAD_STATIC_TO_MEMORY, _shuffle=False):
         """
+        构造函数,完成样本路径及标签的读取
         Arg:
         :_mode:
             LOAD_STATIC_TO_MEMORY: 将所有图片数据架子到内存，只适用于数据集较小的情况
@@ -82,25 +83,35 @@ class BatchReader:
         self.total_step = int(self.images_count / self.batchSize)           # 计算按照给定的batchsize和样本总数，多少满足多少轮取数据操作
         self.data_img = np.empty((0, reSize[1], reSize[0], 3), np.uint8)    # 存放图像的缓冲区
         self.data_index = np.empty((self.batchSize), np.uint8)              # 存放下标
+        # 预加载数据,主要完成当选择静态方式时加载数据
+        self._preLoad()
 
-    def loadImages(self):
+    def _preLoad(self):
         """
+        预加载数据,主要完成当选择静态方式时加载数据
+        :return:
         """
         if self.flag_loadMode == LOAD_STATIC_TO_MEMORY:
-            self.setBatch_index()
-            if self.flage_isAllDataInMem:
-                print "warn: All data is in memory!"
-                return True
-            #load images
+            # 采用静态加载时,直接一次性讲数据加载入内存
+            # load images
             for idx in range(self.images_count):
                 img = cv2.imread(self.image_name_list[idx])
                 img = cv2.resize(img, self.reSize)
                 # self.data_img[idx, :, :, :] = img
                 self.data_img = np.insert(self.data_img, self.data_img.shape[0], img, axis=0)
-            self.flag_dataInMem = True
+                self.flag_dataInMem = True
+        elif self.flag_loadMode == LOAD_DYNAMIC_TO_MEMORY:
+            pass
+
+    def _loadImages(self):
+        """
+        每一轮调用加载数据
+        """
+        if self.flag_loadMode == LOAD_STATIC_TO_MEMORY:
+            self._setBatch_index()
             return True
         elif self.flag_loadMode == LOAD_DYNAMIC_TO_MEMORY:
-            self.setBatch_index()
+            self._setBatch_index()
             self.data_img = np.empty((0, self.reSize[1], self.reSize[0], 3), np.uint8)
             for idx in self.data_index:
                 img = cv2.imread(self.image_name_list[idx])
@@ -112,23 +123,39 @@ class BatchReader:
             return False
 
     def getBatch_index(self):
+        """
+        读取本轮产生的索引
+        :return: 
+        """
         return self.data_index
 
-    def setBatch_index(self):
+    def _setBatch_index(self):
+        """
+        产生本轮的索引
+        :return: 
+        """
         if self.flag_shuffle:
             self.data_index = np.random.randint(0, self.images_count, [self.batchSize])
         else:
             self.data_index = np.arange(self.curr_step*self.batchSize, (self.curr_step+1)*self.batchSize)
 
     def getBatchData(self):
-        if self.loadImages():
+        """
+        用户每轮读取样本的接口
+        :return: 
+        """
+        if self._loadImages():
             self.curr_step += 1
-            return self.getBatch_img(), self.getBatch_label()
-
+            return True
+        return False
 
     def getBatch_img(self):
-        return self.data_img
-
+        if self.flag_loadMode == LOAD_STATIC_TO_MEMORY:
+            return self.data_img[self.data_index]
+        elif self.flag_loadMode == LOAD_DYNAMIC_TO_MEMORY:
+            return self.data_img
+        else:
+            pass
 
     def getBatch_label(self):
         # return data[step*batchSize:(step+1):batchSize]
@@ -161,16 +188,16 @@ if __name__ == "__main__":
     width = 24
     # bacthSize = 64
     batchReader = BatchReader(image_path, list_files, (width, height), 64, _shuffle=True)
-    batchReader.loadImages()
+    batchReader._loadImages()
     print batchReader.getBatch_label()
     print batchReader.getBatch_index()
-    batchReader.loadImages()
+    batchReader._loadImages()
     print batchReader.getBatch_label()
     print batchReader.getBatch_index()
-    batchReader.loadImages()
+    batchReader._loadImages()
     print batchReader.getBatch_label()
     print batchReader.getBatch_index()
-    batchReader.loadImages()
+    batchReader._loadImages()
     print batchReader.getBatch_label()
     print batchReader.getBatch_index()
     # print batchReader.getBatch_index()

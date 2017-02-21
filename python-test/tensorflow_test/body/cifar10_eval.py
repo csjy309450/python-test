@@ -105,7 +105,7 @@ def eval_once(saver, summary_writer, top_k_op, summary_op, batchReader, images, 
       total_sample_count = num_iter * FLAGS.batch_size
       step = 0
       while step < num_iter and not coord.should_stop():
-        batchReader.loadImages()
+        batchReader.getBatchData()
         predictions = sess.run([top_k_op], feed_dict={images: batchReader.getTestImages(step),
                                                       labels: batchReader.getTestLabels(step)})
         true_count += np.sum(predictions)

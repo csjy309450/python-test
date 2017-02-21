@@ -113,9 +113,9 @@ def train():
     for step in xrange(FLAGS.max_steps):
       start_time = time.time()
 
-      batchReader.loadImages()
-      _, loss_value, predictions = sess.run([train_op, loss, accuracy], feed_dict={images: batchReader.getBatch_img(), labels:
-        batchReader.getBatch_label()})
+      batchReader.getBatchData()
+      _, loss_value, predictions = sess.run([train_op, loss, accuracy], feed_dict={images: batchReader.getBatch_img(),
+                                                                                   labels: batchReader.getBatch_label()})
       duration = time.time() - start_time
 
       # assert not np.isnan(loss_value), 'Model diverged with loss = NaN'
