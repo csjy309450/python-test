@@ -50,7 +50,7 @@ import loadDateset
 
 FLAGS = tf.app.flags.FLAGS
 
-tf.app.flags.DEFINE_string('train_dir', '/home/yangzheng/myPrograms/Libs_test/python-test/Tensorflow_test/body/cifar10_train',
+tf.app.flags.DEFINE_string('train_dir', '/home/yangzheng/myPrograms/Libs_test/python-test/tensorflow_test/body/cifar10_train',
                            """Directory where to write )
 event logs """
                            """and checkpoint.""")
