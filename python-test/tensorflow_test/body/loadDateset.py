@@ -156,13 +156,23 @@ if __name__ == "__main__":
     # getBatch_index(64)
     # print data_index
     image_path = '/home/yangzheng/testData/BodyDataset/'
-    list_files = ('validation_images.txt', 'validation_labels.txt')
+    list_files = ('train_images.txt', 'train_labels.txt')
     height = 24
     width = 24
     # bacthSize = 64
     batchReader = BatchReader(image_path, list_files, (width, height), 64, _shuffle=True)
     batchReader.loadImages()
-    print batchReader.getBatchData()
+    print batchReader.getBatch_label()
+    print batchReader.getBatch_index()
+    batchReader.loadImages()
+    print batchReader.getBatch_label()
+    print batchReader.getBatch_index()
+    batchReader.loadImages()
+    print batchReader.getBatch_label()
+    print batchReader.getBatch_index()
+    batchReader.loadImages()
+    print batchReader.getBatch_label()
+    print batchReader.getBatch_index()
     # print batchReader.getBatch_index()
     # time.sleep(5)
     # _ = batchReader.getBatchData()
