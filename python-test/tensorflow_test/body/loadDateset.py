@@ -78,7 +78,7 @@ class BatchReader:
             """图片文件名与标签合在一起存放的情况"""
             pass
 
-        self.images_count = len(self.image_name_list)                       # 总的训练数据适量
+        self.images_count = len(self.image_name_list)                       # 总的训练数据量
         self.total_step = int(self.images_count / self.batchSize)           # 计算按照给定的batchsize和样本总数，多少满足多少轮取数据操作
         self.data_img = np.empty((0, reSize[1], reSize[0], 3), np.uint8)    # 存放图像的缓冲区
         self.data_index = np.empty((self.batchSize), np.uint8)              # 存放下标
@@ -89,6 +89,7 @@ class BatchReader:
         if self.flag_loadMode == LOAD_STATIC_TO_MEMORY:
             self.setBatch_index()
             if self.flage_isAllDataInMem:
+                print "warn: All data is in memory!"
                 return True
             #load images
             for idx in range(self.images_count):
@@ -100,6 +101,7 @@ class BatchReader:
             return True
         elif self.flag_loadMode == LOAD_DYNAMIC_TO_MEMORY:
             self.setBatch_index()
+            self.data_img = np.empty((0, self.reSize[1], self.reSize[0], 3), np.uint8)
             for idx in self.data_index:
                 img = cv2.imread(self.image_name_list[idx])
                 img = cv2.resize(img, self.reSize)
@@ -130,7 +132,7 @@ class BatchReader:
 
     def getBatch_label(self):
         # return data[step*batchSize:(step+1):batchSize]
-        print type(self.data_index)
+        # print type(self.data_index)
         return self.data_label[self.data_index]
 
     def getTestImages(self, step):
@@ -160,7 +162,7 @@ if __name__ == "__main__":
     # bacthSize = 64
     batchReader = BatchReader(image_path, list_files, (width, height), 64, _shuffle=True)
     batchReader.loadImages()
-    # _ = batchReader.getBatchData()
+    print batchReader.getBatchData()
     # print batchReader.getBatch_index()
     # time.sleep(5)
     # _ = batchReader.getBatchData()

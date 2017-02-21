@@ -60,11 +60,12 @@ tf.app.flags.DEFINE_boolean('log_device_placement', False,
                             """Whether to log device placement.""")
 
 image_path = '/home/yangzheng/testData/BodyDataset/'
-list_file = 'train.txt'
+list_file = ('train_images.txt', 'train_labels.txt')
 g_height = cifar10.cifar10_input.IMAGE_SIZE
 g_width = cifar10.cifar10_input.IMAGE_SIZE
 g_bacthSize = FLAGS.batch_size
-batchReader = loadDateset.BatchReader(image_path, list_file, g_bacthSize, (g_width, g_height))
+batchReader = loadDateset.BatchReader(image_path, list_file, (g_width, g_height), batchSize=g_bacthSize,
+                                      _loadMode=loadDateset.LOAD_DYNAMIC_TO_MEMORY, _shuffle=True)
 
 
 def train():
@@ -112,7 +113,7 @@ def train():
     for step in xrange(FLAGS.max_steps):
       start_time = time.time()
 
-      batchReader.getBatch_index()
+      batchReader.loadImages()
       _, loss_value, predictions = sess.run([train_op, loss, accuracy], feed_dict={images: batchReader.getBatch_img(), labels:
         batchReader.getBatch_label()})
       duration = time.time() - start_time
@@ -152,7 +153,6 @@ def train():
 
 def main(argv=None):  # pylint: disable=unused-argument
   #下载saifar10数据
-  batchReader.loadData()
   #删除前次的训练中间数据
   if tf.gfile.Exists(FLAGS.train_dir):
     tf.gfile.DeleteRecursively(FLAGS.train_dir)
