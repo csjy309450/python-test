@@ -139,7 +139,8 @@ def main(argv):  # pylint: disable=unused-argument
                   '/home/yangzheng/myPrograms/Libs_test/python-test/tensorflow_test/body/1/9.png',
                   '/home/yangzheng/myPrograms/Libs_test/python-test/tensorflow_test/body/1/10.png',
                   '/home/yangzheng/myPrograms/Libs_test/python-test/tensorflow_test/body/1/11.png',
-                  '/home/yangzheng/myPrograms/Libs_test/python-test/tensorflow_test/body/1/13.png',
+                  '/home/yangzheng/myPrograms/Libs_test/python-test/tensorflow_test/body/1/12.png',
+		  '/home/yangzheng/myPrograms/Libs_test/python-test/tensorflow_test/body/1/13.png',
                   '/home/yangzheng/myPrograms/Libs_test/python-test/tensorflow_test/body/1/16.png'
                   ]
       bacth_predict(filePath)
