@@ -1,3 +1,0 @@
-model_checkpoint_path: "/home/yangzheng/myPrograms/Libs_test/python-test/Tensorflow_test/saifar10/cifar10_train/model.ckpt-5000"
-all_model_checkpoint_paths: "/home/yangzheng/myPrograms/Libs_test/python-test/Tensorflow_test/saifar10/cifar10_train/model.ckpt-0"
-all_model_checkpoint_paths: "/home/yangzheng/myPrograms/Libs_test/python-test/Tensorflow_test/saifar10/cifar10_train/model.ckpt-5000"
