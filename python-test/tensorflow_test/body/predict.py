@@ -127,22 +127,23 @@ def main(argv):  # pylint: disable=unused-argument
   # using conmande line
   if len(sys.argv)==1:
       # ## test code
-      filePath = ['/home/yangzheng/myPrograms/Libs_test/python-test/tensorflow_test/body/1/0.png',
-                  '/home/yangzheng/myPrograms/Libs_test/python-test/tensorflow_test/body/1/1.png',
-                  '/home/yangzheng/myPrograms/Libs_test/python-test/tensorflow_test/body/1/2.png',
-                  '/home/yangzheng/myPrograms/Libs_test/python-test/tensorflow_test/body/1/3.png',
-                  '/home/yangzheng/myPrograms/Libs_test/python-test/tensorflow_test/body/1/4.png',
-                  '/home/yangzheng/myPrograms/Libs_test/python-test/tensorflow_test/body/1/5.png',
-                  '/home/yangzheng/myPrograms/Libs_test/python-test/tensorflow_test/body/1/6.png',
-                  '/home/yangzheng/myPrograms/Libs_test/python-test/tensorflow_test/body/1/7.png',
-                  '/home/yangzheng/myPrograms/Libs_test/python-test/tensorflow_test/body/1/8.png',
-                  '/home/yangzheng/myPrograms/Libs_test/python-test/tensorflow_test/body/1/9.png',
-                  '/home/yangzheng/myPrograms/Libs_test/python-test/tensorflow_test/body/1/10.png',
-                  '/home/yangzheng/myPrograms/Libs_test/python-test/tensorflow_test/body/1/11.png',
-                  '/home/yangzheng/myPrograms/Libs_test/python-test/tensorflow_test/body/1/12.png',
-		  '/home/yangzheng/myPrograms/Libs_test/python-test/tensorflow_test/body/1/13.png',
-                  '/home/yangzheng/myPrograms/Libs_test/python-test/tensorflow_test/body/1/16.png'
-                  ]
+      filePath = [
+          '/home/yangzheng/myPrograms/Libs_test/python-test/tensorflow_test/body/testdata/0.png',
+          '/home/yangzheng/myPrograms/Libs_test/python-test/tensorflow_test/body/testdata/1.png',
+          '/home/yangzheng/myPrograms/Libs_test/python-test/tensorflow_test/body/testdata/2.png',
+          '/home/yangzheng/myPrograms/Libs_test/python-test/tensorflow_test/body/testdata/3.png',
+          '/home/yangzheng/myPrograms/Libs_test/python-test/tensorflow_test/body/testdata/4.png',
+          '/home/yangzheng/myPrograms/Libs_test/python-test/tensorflow_test/body/testdata/5.png',
+          '/home/yangzheng/myPrograms/Libs_test/python-test/tensorflow_test/body/testdata/6.png',
+          '/home/yangzheng/myPrograms/Libs_test/python-test/tensorflow_test/body/testdata/7.png',
+          '/home/yangzheng/myPrograms/Libs_test/python-test/tensorflow_test/body/testdata/8.png',
+          '/home/yangzheng/myPrograms/Libs_test/python-test/tensorflow_test/body/testdata/9.png',
+          '/home/yangzheng/myPrograms/Libs_test/python-test/tensorflow_test/body/testdata/10.png',
+          '/home/yangzheng/myPrograms/Libs_test/python-test/tensorflow_test/body/testdata/11.png',
+          '/home/yangzheng/myPrograms/Libs_test/python-test/tensorflow_test/body/testdata/12.png',
+		  '/home/yangzheng/myPrograms/Libs_test/python-test/tensorflow_test/body/testdata/13.png',
+          '/home/yangzheng/myPrograms/Libs_test/python-test/tensorflow_test/body/testdata/16.png'
+           ]
       bacth_predict(filePath)
   else:
       filePath = sys.argv[1:]
