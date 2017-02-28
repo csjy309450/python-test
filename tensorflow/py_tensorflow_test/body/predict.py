@@ -12,6 +12,7 @@ import sys
 import numpy as np
 import tensorflow as tf
 import cv2
+import NMS
 
 import cifar10
 import cifar10_eval
@@ -54,13 +55,8 @@ def predict_once(saver, logits, pre_img, images):
                                          start=True))
 
       predictions = sess.run([logits], feed_dict={images: pre_img})
-      result = ''
-      if predictions[0][0, 0]>predictions[0][0, 1]:
-          result = 'person'
-      else:
-          result = 'inperson'
-      str_output = LOG['GREEN'] + 'predict val: ' + str(predictions) + '\nresult = ' + result + LOG['ENDC']
-      print(str_output)
+      # str_output = LOG['GREEN'] + 'predict val: ' + str(predictions) + '\nresult = ' + result + LOG['ENDC']
+      # print(str_output)
 
     #   summary = tf.Summary()
     #   summary.ParseFromString(sess.run(summary_op))
@@ -71,6 +67,14 @@ def predict_once(saver, logits, pre_img, images):
 
     coord.request_stop()
     coord.join(threads, stop_grace_period_secs=10)
+
+    if predictions[0][0, 0] > predictions[0][0, 1]:
+        result = 'person'
+        pred_value = predictions[0][0, 0]
+        return result, pred_value
+    else:
+        result = 'inperson'
+        return result, ''
 
 
 def predict(pre_img):
@@ -120,31 +124,75 @@ def bacth_predict(filePath):
             return
         img = cv2.resize(img, (24, 24))
         img = np.array([img])  # 注：要做单个预测必须加此语句
-        predict_once(saver, logits, img, images)
+        result, value = predict_once(saver, logits, img, images)
+        print(result, value)
+
+def bacth_predict_from_images(filePath):
+  """Eval CIFAR-10 for a number of steps."""
+  with tf.Graph().as_default() as g:
+    # Get images and labels for CIFAR-10.
+    images = tf.placeholder(tf.float32, shape=[1, 24, 24, 3])
+
+    # a = images.get_shape()
+
+    # Build a Graph that computes the logits predictions from the
+    # inference model.
+    logits = cifar10.predict_inference(images)
+
+    # Calculate predictions.
+
+    # Restore the moving average version of the learned variables for eval.
+    variable_averages = tf.train.ExponentialMovingAverage(
+        cifar10.MOVING_AVERAGE_DECAY)
+    variables_to_restore = variable_averages.variables_to_restore()
+    saver = tf.train.Saver(variables_to_restore)
+    for it in filePath:
+        img = cv2.imread(it)
+        if img.shape[0] == 0:
+            return
+        width = 11
+        height = 32
+        center_offset_w = int((width) / 2)
+        center_offset_h = int((height) / 2)
+        w_indx = int(img.shape[1] - (width) / 2)
+        h_indx = int(img.shape[0] - (height) / 2)
+        personBox = np.empty((0,5))
+        for h in xrange(center_offset_h, h_indx):
+            for w in xrange(center_offset_w, w_indx):
+                sub_img_source = cv2.getRectSubPix(img, (width, height), (w, h))
+                # cv2.imshow('subimg', sub_img_source)
+                # cv2.waitKey(0)
+                sub_img = cv2.resize(sub_img_source, (24, 24))
+                sub_img = np.array([sub_img])  # 注：要做单个预测必须加此语句
+                result, pre_value = predict_once(saver, logits, sub_img, images)
+                print(result, pre_value)
+                if result == 'person' and pre_value != '':
+                    # cv2.rectangle(img, (w - center_offset_w, h - center_offset_h), (w + center_offset_w, h + center_offset_h), (0, 0, 255))
+                    personBox = np.row_stack((personBox, [w - center_offset_w, h - center_offset_h, w + center_offset_w,
+                                      h + center_offset_h, pre_value]))
+                ## test
+                # img_t = np.copy(img)
+                # cv2.rectangle(img_t, (w - center_offset_w, h - center_offset_h),
+                #               (w + center_offset_w, h + center_offset_h), (0, 0, 255))
+                # cv2.imshow('img', img_t)
+                # cv2.waitKey(0)
+        persons = NMS.py_cpu_nms(personBox, 0.4)
+        for it in persons:
+            cv2.rectangle(img, (int(personBox[it,0]), int(personBox[it,1])), (int(personBox[it,2]), int(personBox[it,3])),
+                          (0, 0, 255))
+        cv2.imshow('img', img)
+        cv2.waitKey(0)
+        cv2.destroyAllWindows()
 
 
 def main(argv):  # pylint: disable=unused-argument
   # using conmande line
   if len(sys.argv)==1:
-      # ## test code
+      ## test code
       filePath = [
-          '/home/yangzheng/myPrograms/Libs_test/python-test/tensorflow_test/body/testdata/0.png',
-          '/home/yangzheng/myPrograms/Libs_test/python-test/tensorflow_test/body/testdata/1.png',
-          '/home/yangzheng/myPrograms/Libs_test/python-test/tensorflow_test/body/testdata/2.png',
-          '/home/yangzheng/myPrograms/Libs_test/python-test/tensorflow_test/body/testdata/3.png',
-          '/home/yangzheng/myPrograms/Libs_test/python-test/tensorflow_test/body/testdata/4.png',
-          '/home/yangzheng/myPrograms/Libs_test/python-test/tensorflow_test/body/testdata/5.png',
-          '/home/yangzheng/myPrograms/Libs_test/python-test/tensorflow_test/body/testdata/6.png',
-          '/home/yangzheng/myPrograms/Libs_test/python-test/tensorflow_test/body/testdata/7.png',
-          '/home/yangzheng/myPrograms/Libs_test/python-test/tensorflow_test/body/testdata/8.png',
-          '/home/yangzheng/myPrograms/Libs_test/python-test/tensorflow_test/body/testdata/9.png',
-          '/home/yangzheng/myPrograms/Libs_test/python-test/tensorflow_test/body/testdata/10.png',
-          '/home/yangzheng/myPrograms/Libs_test/python-test/tensorflow_test/body/testdata/11.png',
-          '/home/yangzheng/myPrograms/Libs_test/python-test/tensorflow_test/body/testdata/12.png',
-		  '/home/yangzheng/myPrograms/Libs_test/python-test/tensorflow_test/body/testdata/13.png',
-          '/home/yangzheng/myPrograms/Libs_test/python-test/tensorflow_test/body/testdata/16.png'
+          '/home/yangzheng/myPrograms/Libs_test/tensorflow/py_tensorflow_test/body/testdata/10.png'
            ]
-      bacth_predict(filePath)
+      bacth_predict_from_images(filePath)
   else:
       filePath = sys.argv[1:]
       bacth_predict(filePath)
