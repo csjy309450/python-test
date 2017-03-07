@@ -9,15 +9,16 @@ from sklearn.externals import joblib
 
 
 datafilePath = (
-	"/home/yangzheng/testData/ucsd/person_perspective_data/vidf1_33_000_f001.npy",
-	"/home/yangzheng/testData/ucsd/person_perspective_data/vidf1_33_000_f017.npy",
-	"/home/yangzheng/testData/ucsd/person_perspective_data/vidf1_33_000_f040.npy",
-	"/home/yangzheng/testData/ucsd/person_perspective_data/vidf1_33_003_f001.npy",
-	"/home/yangzheng/testData/ucsd/person_perspective_data/vidf1_33_003_f002.npy",
-	"/home/yangzheng/testData/ucsd/person_perspective_data/vidf1_33_003_f003.npy",
+	"/home/yangzheng/testData/pet/View_001_lable/frame_0000.npy",
+	"/home/yangzheng/testData/pet/View_001_lable/frame_0020.npy",
+	"/home/yangzheng/testData/pet/View_001_lable/frame_0037.npy",
+	"/home/yangzheng/testData/pet/View_001_lable/frame_0053.npy",
+	"/home/yangzheng/testData/pet/View_001_lable/frame_0059.npy",
+	"/home/yangzheng/testData/pet/View_001_lable/frame_0114.npy",
+    "/home/yangzheng/testData/pet/View_001_lable/frame_0214.npy",
 )
-_xlim = (0, 238)
-_ylim = (0, 158)
+_xlim = (0, 768)
+_ylim = (0, 576)
 threshold_ = 0.2
 
 def loadDataset(_filePaths):
@@ -72,7 +73,7 @@ def LinearRegression(_dataset, _modePath=''):
     data_train, data_test = makeTrainsetAndTestset(_dataset, _threshold=0)
     reg = linear_model.LinearRegression()
     reg.fit(data_train[0], data_train[1])
-    joblib.dump(reg, _modePath+'LinearRegression.m')
+    joblib.dump(reg, _modePath+'personTall_Model.m')
 
 if __name__ == '__main__':
     dataset = loadDataset(datafilePath)
