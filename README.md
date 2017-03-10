@@ -12,7 +12,7 @@ python test projects
 > * 撰写发布技术文稿（代码支持）
 > * 撰写发布学术论文（LaTeX 公式支持）
 
-![cmd-markdown-logo](https://www.zybuluo.com/static/img/logo.png)
+![cmd-markdown-logo](https://github.com/csjy309450/Libs_test/blob/master/Qt4/PyQt4_test/Icon.png)
 
 除了您现在看到的这个 Cmd Markdown 在线版本，您还可以前往以下网址下载：
 
