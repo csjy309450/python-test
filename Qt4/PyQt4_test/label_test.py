@@ -7,12 +7,12 @@ import sys
 class MainWidget(QMainWindow):
     def __init__(self, parent=None):
         super(MainWidget, self).__init__(parent)
-        # self.edit = QLineEdit(self)
-        # self.edit.setGeometry(0, 0, 200, 30)
-        # self.label = QLabel(self)
-        # self.label.setGeometry(0, 31, 200, 200)
-        # self.resize(205, 235)
-        # self.edit.editingFinished.connect(self.On_editingFinished)
+        self.edit = QLineEdit(self)
+        self.edit.setGeometry(0, 0, 200, 30)
+        self.label = QLabel(self)
+        self.label.setGeometry(0, 31, 200, 200)
+        self.resize(205, 235)
+        self.edit.editingFinished.connect(self.On_editingFinished)
 
         edit = QPlainTextEdit(self)
         self.show()
