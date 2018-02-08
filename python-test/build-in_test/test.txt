@@ -1,0 +1,4 @@
+yangzheng@yangzheng-sci:~/myPrograms/Libs_test/python-test/build-in_test$ ls
+mypyt.py  mypyt.pyc  pyt_test.py  test_stringIO.py  test.txt  typescript
+yangzheng@yangzheng-sci:~/myPrograms/Libs_test/python-test/build-in_test$ exi<yPrograms/Libs_test/python-test/build-in_test$ exit                         
+exit
