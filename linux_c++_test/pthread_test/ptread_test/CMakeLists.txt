@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 3.2)
+set(CMAKE_CXX_FLAGS "-std=c++11")
+set(PROJECT_NAME pthread_test)
+add_compile_options(${CMAKE_CXX_FLAGS})
+set(SRC main.cpp)
+
+include_directories(/usr/include)
+link_directories(/usr/lib/x86_64-linux-gnu)
+find_library(PTHREAD_LIBS pthread /usr/lib/x86_64-linux-gnu)
+add_executable(${PROJECT_NAME} ${SRC} )
+target_link_libraries(${PROJECT_NAME} ${PTHREAD_LIBS})

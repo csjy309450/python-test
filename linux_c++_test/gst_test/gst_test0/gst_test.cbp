@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="gst_test" />
+		<Option makefile_is_custom="1" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<MakeCommands>
+			<Build command="$make -f $makefile " />
+			<CompileFile command="$make -f $makefile $file" />
+			<Clean command="$make -f $makefile clean" />
+			<DistClean command="$make -f $makefile distclean$target" />
+			<AskRebuildNeeded command="$make -q -f $makefile" />
+			<SilentBuild command="$make -f $makefile  &gt; $(CMD_NULL)" />
+		</MakeCommands>
+		<Build>
+			<Target title="Debug">
+				<Option output="./player" prefix_auto="1" extension_auto="1" />
+				<Option object_output="./" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<MakeCommands>
+					<Build command="$make -f $makefile " />
+					<CompileFile command="$make -f $makefile $file" />
+					<Clean command="$make -f $makefile clean" />
+					<DistClean command="$make -f $makefile distclean$target" />
+					<AskRebuildNeeded command="$make -q -f $makefile " />
+					<SilentBuild command="$make -f $makefile  &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="/usr/include/gstreamer-0.10" />
+			<Add directory="/usr/include/glib-2.0" />
+			<Add directory="/usr/lib/x86_64-linux-gnu/glib-2.0/include" />
+			<Add directory="/usr/include/gtk-2.0" />
+			<Add directory="/usr/include/pango-1.0" />
+			<Add directory="/usr/include/cairo" />
+			<Add directory="/usr/include/gdk-pixbuf" />
+			<Add directory="/usr/include/atk-1.0" />
+			<Add directory="/usr/include/libxml2" />
+			<Add directory="/usr/lib/x86_64-linux-gnu/gtk-2.0/include" />
+		</Compiler>
+		<Linker>
+			<Add directory="libs" />
+		</Linker>
+		<Unit filename="player.c">
+			<Option compilerVar="CC" />
+			<Option compiler="gcc" use="0" buildCommand="gcc -o player player.c main.h `pkg-config --cflags --libs gtk+-2.0 gstreamer-0.10`" />
+		</Unit>
+		<Unit filename="player.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

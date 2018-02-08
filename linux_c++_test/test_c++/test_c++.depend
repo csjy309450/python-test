@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1511188341 source:/home/yz/myPrograms/test/linux/test_c++/main.cpp
+	<iostream>
+	<climits>
+	<cstdlib>
+	<cstdio>
+	<cstddef>
+	<new>
+	<typeinfo>
+	<vector>
+	<initializer_list>
+	<csignal>
+	<stdexcept>
+	<utility>
+	<tuple>
+	<set>
+	<unistd.h>
+

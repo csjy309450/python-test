@@ -1,0 +1,15 @@
+CXX_SRCS:=myAPI.cpp test1.cpp
+CXX_OBJS:=myAPI.o test1.o
+CXX_PATH:=.
+
+step1: step2
+	echo main
+	g++ main.cpp -L. -lmyAPI -o main
+
+step2: $(CXX_OBJS)
+	echo libmyAPI.so
+	g++ $(CXX_OBJS) -fPIC -shared -o libmyAPI.so
+
+$(CXX_PATH)/%.o: %.cpp
+	echo $<
+	g++ -fPIC -c -o $@ $<

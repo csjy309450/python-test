@@ -1,0 +1,12 @@
+CXX_SRCS:=myAPI.cpp test1.cpp
+CXX_OBJS:=myAPI.o test1.o
+
+main: myAPI
+	echo $(CXX_OBJS)
+	g++ main.cpp -L. -lmyAPI -o $@
+
+myAPI:$(CXX_OBJS)
+	g++ $(CXX_OBJS) -fPIC -shared -o libmyAPI.so
+
+$(CXX_OBJS): $(CXX_SRCS)
+	g++ -c -fPIC $(CXX_SRCS)

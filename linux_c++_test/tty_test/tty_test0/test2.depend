@@ -1,0 +1,330 @@
+# depslib dependency file v1.0
+1496482712 source:/home/yangzheng/programs/c/test2/main.c
+	<unistd.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	<termios.h>
+	<curses.h>
+
+1417721342 /usr/include/unistd.h
+	<features.h>
+	<bits/posix_opt.h>
+	<bits/environments.h>
+	<bits/types.h>
+	<stddef.h>
+	<bits/confname.h>
+	<getopt.h>
+	<bits/unistd.h>
+
+1417721321 /usr/include/features.h
+	<stdc-predef.h>
+	<sys/cdefs.h>
+	<gnu/stubs.h>
+
+1417721321 /usr/include/stdc-predef.h
+
+1417721344 /usr/include/x86_64-linux-gnu/sys/cdefs.h
+	<features.h>
+	<bits/wordsize.h>
+
+1417721338 /usr/include/x86_64-linux-gnu/bits/wordsize.h
+
+1417721321 /usr/include/x86_64-linux-gnu/gnu/stubs.h
+	<gnu/stubs-32.h>
+	<gnu/stubs-64.h>
+	<gnu/stubs-x32.h>
+
+1417721364 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h
+
+1417721342 /usr/include/x86_64-linux-gnu/bits/posix_opt.h
+
+1417721342 /usr/include/x86_64-linux-gnu/bits/environments.h
+	<bits/wordsize.h>
+
+1417721342 /usr/include/x86_64-linux-gnu/bits/types.h
+	<features.h>
+	<bits/wordsize.h>
+	<bits/typesizes.h>
+
+1417721342 /usr/include/x86_64-linux-gnu/bits/typesizes.h
+
+1417721342 /usr/include/x86_64-linux-gnu/bits/confname.h
+
+1417721342 /usr/include/getopt.h
+	<ctype.h>
+
+1417721334 /usr/include/ctype.h
+	<features.h>
+	<bits/types.h>
+	<endian.h>
+	<xlocale.h>
+
+1417721340 /usr/include/endian.h
+	<features.h>
+	<bits/endian.h>
+	<bits/byteswap.h>
+
+1417721340 /usr/include/x86_64-linux-gnu/bits/endian.h
+
+1417721340 /usr/include/x86_64-linux-gnu/bits/byteswap.h
+	<features.h>
+	<bits/types.h>
+	<bits/wordsize.h>
+	<bits/byteswap-16.h>
+
+1417721340 /usr/include/x86_64-linux-gnu/bits/byteswap-16.h
+
+1417721322 /usr/include/xlocale.h
+
+1417721342 /usr/include/x86_64-linux-gnu/bits/unistd.h
+
+1417721339 /usr/include/stdio.h
+	<features.h>
+	<stddef.h>
+	<bits/types.h>
+	<libio.h>
+	<stdarg.h>
+	<bits/stdio_lim.h>
+	<bits/sys_errlist.h>
+	<getopt.h>
+	<bits/stdio.h>
+	<bits/stdio2.h>
+	<bits/stdio-ldbl.h>
+
+1417721339 /usr/include/libio.h
+	<_G_config.h>
+	<stdarg.h>
+	<sys/cdefs.h>
+	<bits/stdio-lock.h>
+	<shlib-compat.h>
+	<bits/libio-ldbl.h>
+
+1417721339 /usr/include/_G_config.h
+	<bits/types.h>
+	<stddef.h>
+	<wchar.h>
+	<gconv.h>
+
+1417721341 /usr/include/wchar.h
+	<features.h>
+	<stdio.h>
+	<stdarg.h>
+	<bits/wchar.h>
+	<stddef.h>
+	<wctype.h>
+	<xlocale.h>
+	<xlocale.h>
+	<xlocale.h>
+	<wctype.h>
+	<bits/wchar2.h>
+	<bits/wchar-ldbl.h>
+
+1417721341 /usr/include/x86_64-linux-gnu/bits/wchar.h
+
+1417721345 /usr/include/wctype.h
+	<features.h>
+	<bits/types.h>
+	<wchar.h>
+	<endian.h>
+	<xlocale.h>
+
+1417721341 /usr/include/x86_64-linux-gnu/bits/wchar2.h
+
+1417721341 /usr/include/x86_64-linux-gnu/bits/wchar-ldbl.h
+
+1417721321 /usr/include/gconv.h
+	<features.h>
+	<wchar.h>
+	<stddef.h>
+
+1417721339 /usr/include/x86_64-linux-gnu/bits/stdio-lock.h
+	<bits/libc-lock.h>
+	<lowlevellock.h>
+
+1417721321 /usr/include/x86_64-linux-gnu/bits/libc-lock.h
+	<pthread.h>
+	<stddef.h>
+	<lowlevellock.h>
+	<tls.h>
+	<pthread-functions.h>
+	<errno.h>
+	<gnu/option-groups.h>
+	"libc-lockP.h"
+
+1417721350 /usr/include/pthread.h
+	<features.h>
+	<endian.h>
+	<sched.h>
+	<time.h>
+	<bits/pthreadtypes.h>
+	<bits/setjmp.h>
+	<bits/wordsize.h>
+
+1417721342 /usr/include/sched.h
+	<features.h>
+	<bits/types.h>
+	<stddef.h>
+	<time.h>
+	<bits/sched.h>
+
+1417721341 /usr/include/time.h
+	<features.h>
+	<stddef.h>
+	<bits/time.h>
+	<bits/types.h>
+	<bits/types.h>
+	<bits/types.h>
+	<bits/types.h>
+	<bits/types.h>
+	<xlocale.h>
+
+1417721341 /usr/include/x86_64-linux-gnu/bits/time.h
+	<bits/types.h>
+	<bits/types.h>
+	<bits/timex.h>
+
+1417721341 /usr/include/x86_64-linux-gnu/bits/timex.h
+	<bits/types.h>
+
+1417721342 /usr/include/x86_64-linux-gnu/bits/sched.h
+
+1417721342 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
+	<bits/wordsize.h>
+
+1417721337 /usr/include/x86_64-linux-gnu/bits/setjmp.h
+	<bits/wordsize.h>
+
+1417721338 /usr/include/errno.h
+	<features.h>
+	<bits/errno.h>
+
+1417721338 /usr/include/x86_64-linux-gnu/bits/errno.h
+	<linux/errno.h>
+
+1421179916 /usr/include/linux/errno.h
+	<asm/errno.h>
+
+1421179922 /usr/include/x86_64-linux-gnu/asm/errno.h
+	<asm-generic/errno.h>
+
+1421179905 /usr/include/asm-generic/errno.h
+	<asm-generic/errno-base.h>
+
+1421179905 /usr/include/asm-generic/errno-base.h
+
+1417721359 /usr/include/x86_64-linux-gnu/gnu/option-groups.h
+
+1417721339 /usr/include/x86_64-linux-gnu/bits/libio-ldbl.h
+
+1417721338 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h
+
+1417721339 /usr/include/x86_64-linux-gnu/bits/sys_errlist.h
+
+1417721339 /usr/include/x86_64-linux-gnu/bits/stdio.h
+
+1417721339 /usr/include/x86_64-linux-gnu/bits/stdio2.h
+
+1417721339 /usr/include/x86_64-linux-gnu/bits/stdio-ldbl.h
+
+1417721338 /usr/include/stdlib.h
+	<features.h>
+	<stddef.h>
+	<bits/waitflags.h>
+	<bits/waitstatus.h>
+	<xlocale.h>
+	<sys/types.h>
+	<alloca.h>
+	<bits/stdlib-bsearch.h>
+	<bits/stdlib-float.h>
+	<bits/stdlib.h>
+	<bits/stdlib-ldbl.h>
+
+1417721342 /usr/include/x86_64-linux-gnu/bits/waitflags.h
+
+1417721342 /usr/include/x86_64-linux-gnu/bits/waitstatus.h
+	<endian.h>
+
+1417721342 /usr/include/x86_64-linux-gnu/sys/types.h
+	<features.h>
+	<bits/types.h>
+	<time.h>
+	<stddef.h>
+	<endian.h>
+	<sys/select.h>
+	<sys/sysmacros.h>
+	<bits/pthreadtypes.h>
+
+1417721344 /usr/include/x86_64-linux-gnu/sys/select.h
+	<features.h>
+	<bits/types.h>
+	<bits/select.h>
+	<bits/sigset.h>
+	<time.h>
+	<bits/time.h>
+	<bits/select2.h>
+
+1417721344 /usr/include/x86_64-linux-gnu/bits/select.h
+	<bits/wordsize.h>
+
+1417721337 /usr/include/x86_64-linux-gnu/bits/sigset.h
+
+1417721344 /usr/include/x86_64-linux-gnu/bits/select2.h
+
+1417721342 /usr/include/x86_64-linux-gnu/sys/sysmacros.h
+	<features.h>
+
+1417721338 /usr/include/alloca.h
+	<features.h>
+	<stddef.h>
+
+1417721338 /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h
+
+1417721338 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
+
+1417721338 /usr/include/x86_64-linux-gnu/bits/stdlib.h
+
+1417721338 /usr/include/x86_64-linux-gnu/bits/stdlib-ldbl.h
+
+1417721340 /usr/include/string.h
+	<features.h>
+	<stddef.h>
+	<xlocale.h>
+	<bits/string.h>
+	<bits/string2.h>
+	<bits/string3.h>
+
+1417721340 /usr/include/x86_64-linux-gnu/bits/string.h
+
+1417721340 /usr/include/x86_64-linux-gnu/bits/string2.h
+	<endian.h>
+	<bits/types.h>
+	<stdlib.h>
+
+1417721340 /usr/include/x86_64-linux-gnu/bits/string3.h
+
+1417721343 /usr/include/termios.h
+	<features.h>
+	<bits/types.h>
+	<bits/termios.h>
+	<sys/ttydefaults.h>
+
+1417721343 /usr/include/x86_64-linux-gnu/bits/termios.h
+
+1417721343 /usr/include/x86_64-linux-gnu/sys/ttydefaults.h
+
+1395515101 /usr/include/curses.h
+	<ncurses_dll.h>
+	<stdio.h>
+	<stdarg.h>
+	<stddef.h>
+	<stdbool.h>
+	<libutf8.h>
+	<wchar.h>
+	<unctrl.h>
+
+1395515101 /usr/include/ncurses_dll.h
+
+1395515101 /usr/include/unctrl.h
+	<curses.h>
+
