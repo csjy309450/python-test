@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ogml>
+<graph>
+<structure>
+<node id="n4">
+<label id="ln4">
+<content>Here&apos;s quite a simple node...</content>
+</label>
+</node>
+<node id="n5">
+<label id="ln5">
+<content>&lt;html&gt;
+&lt;head&gt;
+&lt;meta name="qrichtext" content="1" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p align="center"&gt;
+&lt;span style="font-family:Comic Sans MS;font-size:14pt;font-style:italic;font-weight:600;color:#a52a2a"&gt;
+much nicer label...&lt;/span&gt;
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</content>
+</label>
+</node>
+<node id="n6">
+<label id="ln6">
+<content>&lt;html&gt;
+&lt;head&gt;
+&lt;meta name="qrichtext" content="1" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p align="center"&gt;
+&lt;span style="font-family:Times New Roman;font-size:28pt;font-weight:600;color:#0000cd"&gt;
+Hexagon&lt;/span&gt;
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</content>
+</label>
+</node>
+<node id="n7">
+<label id="ln7">
+<content>simple</content>
+</label>
+</node>
+<node id="n8">
+<label id="ln8">
+<content>&lt;html&gt;
+&lt;head&gt;
+&lt;meta name="qrichtext" content="1" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p align="center"&gt;
+&lt;span style="font-family:Tahoma;font-size:20pt;font-weight:600;color:#ff0000"&gt;
+10&lt;/span&gt;
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</content>
+</label>
+</node>
+<node id="c1">
+<label id="lc1">
+<content>BIG</content>
+</label>
+<node id="c2">
+<label id="lc2">
+<content>Numero due</content>
+</label>
+<node id="n2">
+<label id="ln2">
+<content>&lt;html&gt;
+&lt;head&gt;
+&lt;meta name="qrichtext" content="1" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p align="center"&gt;
+&lt;span style="font-family:Arial;font-size:10pt;font-weight:600;color:#0000ff"&gt;
+2&lt;/span&gt;
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</content>
+</label>
+</node>
+<node id="n1">
+<label id="ln1">
+<content>&lt;html&gt;
+&lt;head&gt;
+&lt;meta name="qrichtext" content="1" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p align="center"&gt;
+&lt;span style="font-family:Arial Rounded MT Bold;font-style:italic;font-size:10pt"&gt;
+another &lt;/span&gt;
+&lt;span style="font-family:Arial Rounded MT Bold;font-style:italic;font-size:10pt;color:#ff0000"&gt;
+one&lt;/span&gt;
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</content>
+</label>
+</node>
+</node>
+<node id="c3">
+<label id="lc3">
+<content>Cluster 1</content>
+</label>
+<node id="n0">
+<label id="ln0">
+<content>&lt;html&gt;
+&lt;head&gt;
+&lt;meta name="qrichtext" content="1" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p align="center"&gt;
+&lt;span style="font-family:Arial;font-size:12pt"&gt;
+Das ist der erste &lt;/span&gt;
+&lt;span style="font-family:Arial;font-size:12pt;font-weight:600"&gt;
+Knoten&lt;/span&gt;
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</content>
+</label>
+</node>
+<node id="n3">
+<label id="ln3">
+<content>&lt;html&gt;
+&lt;head&gt;
+&lt;meta name="qrichtext" content="1" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p align="center"&gt;
+&lt;span style="font-family:Comic Sans MS;font-size:20pt"&gt;
+3&lt;/span&gt;
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</content>
+</label>
+</node>
+</node>
+</node>
+<edge id="e0">
+<source idRef="n0"/>
+<target idRef="n2"/>
+</edge>
+<edge id="e1">
+<source idRef="n2"/>
+<target idRef="n1"/>
+</edge>
+<edge id="e2">
+<source idRef="n0"/>
+<target idRef="n3"/>
+</edge>
+<edge id="e3">
+<source idRef="n0"/>
+<target idRef="n1"/>
+</edge>
+<edge id="e4">
+<source idRef="n3"/>
+<target idRef="n4"/>
+</edge>
+<edge id="e5">
+<source idRef="n4"/>
+<target idRef="n5"/>
+</edge>
+<edge id="e6">
+<source idRef="n6"/>
+<target idRef="n5"/>
+</edge>
+<edge id="e7">
+<source idRef="n8"/>
+<target idRef="n4"/>
+</edge>
+</structure>
+<layout>
+<styles>
+<nodeStyle idRef="n0">
+<location x="72.00000000" y="90.50000000"/>
+<shape type="rect" width="104.0000000" height="53.00000000"/>
+<fill color="#ffd700" pattern="solid" patternColor="#000000"/>
+<line type="solid" width="1.000000000" color="#000000"/>
+</nodeStyle>
+<nodeStyle idRef="n1">
+<location x="78.50000000" y="263.0000000"/>
+<shape type="rect" width="85.00000000" height="20.00000000"/>
+<fill color="#ffd700" pattern="solid" patternColor="#000000"/>
+<line type="solid" width="1.000000000" color="#000000"/>
+</nodeStyle>
+<nodeStyle idRef="n2">
+<location x="291.0000000" y="263.0000000"/>
+<shape type="rect" width="40.00000000" height="20.00000000"/>
+<fill color="#f0e68c" pattern="solid" patternColor="#000000"/>
+<line type="solid" width="1.000000000" color="#000000"/>
+</nodeStyle>
+<nodeStyle idRef="n3">
+<location x="204.5000000" y="96.50000000"/>
+<shape type="rect" width="47.00000000" height="41.00000000"/>
+<fill color="#ffd700" pattern="solid" patternColor="#000000"/>
+<line type="solid" width="1.000000000" color="#000000"/>
+</nodeStyle>
+<nodeStyle idRef="n4">
+<location x="462.5000000" y="106.0000000"/>
+<shape type="rect" width="175.0000000" height="20.00000000"/>
+<fill color="#ffd700" pattern="solid" patternColor="#000000"/>
+<line type="solid" width="1.000000000" color="#000000"/>
+</nodeStyle>
+<labelStyle idRef="ln4">
+<text verticalAlign="middle" textAlign="center" />
+<font family="Arial" size="10" weight="normal" color="#000000" />
+</labelStyle>
+<nodeStyle idRef="n5">
+<location x="481.5000000" y="190.0000000"/>
+<shape type="trapeze" width="185.0000000" height="28.00000000"/>
+<fill color="#66cdaa" pattern="solid" patternColor="#000000"/>
+<line type="solid" width="1.000000000" color="#000000"/>
+</nodeStyle>
+<nodeStyle idRef="n6">
+<location x="78.50000000" y="395.0000000"/>
+<shape type="hexagon" width="151.0000000" height="48.00000000"/>
+<fill color="#7fffd4" pattern="solid" patternColor="#000000"/>
+<line type="solid" width="1.000000000" color="#0000cd"/>
+</nodeStyle>
+<nodeStyle idRef="n7">
+<location x="429.5000000" y="32.00000000"/>
+<shape type="rect" width="141.0000000" height="46.00000000"/>
+<fill color="#e6e6fa" pattern="solid" patternColor="#000000"/>
+<line type="dash" width="3.000000000" color="#800000"/>
+</nodeStyle>
+<labelStyle idRef="ln7">
+<text verticalAlign="middle" textAlign="center" />
+<font family="CMU Classical Serif" size="24" weight="normal" color="#000000" />
+</labelStyle>
+<nodeStyle idRef="n8">
+<location x="745.0000000" y="111.5000000"/>
+<shape type="ellipse" width="64.00000000" height="57.00000000"/>
+<fill color="#ffd700" pattern="solid" patternColor="#000000"/>
+<line type="solid" width="1.000000000" color="#ff0000"/>
+</nodeStyle>
+<nodeStyle idRef="c1">
+<location x="19.00000000" y="16.00000000"/>
+<shape type="rect" width="364.0000000" height="327.0000000"/>
+<fill color="#f0e68c" pattern="solid" patternColor="#000000"/>
+<line type="dashDot" width="3.000000000" color="#4682b4"/>
+</nodeStyle>
+<labelStyle idRef="lc1">
+<text textAlign="left" />
+<font family="Arial" size="14" weight="bold" color="#ff0000" />
+</labelStyle>
+<nodeStyle idRef="c2">
+<location x="54.00000000" y="203.0000000"/>
+<shape type="rect" width="308.0000000" height="115.0000000"/>
+<fill color="#e6e6fa" pattern="solid" patternColor="#000000"/>
+<line type="dot" width="3.000000000" color="#008000"/>
+</nodeStyle>
+<labelStyle idRef="lc2">
+<text textAlign="left" />
+<font family="Cordia New" size="16" weight="bold" color="#191970" />
+</labelStyle>
+<nodeStyle idRef="c3">
+<location x="42.00000000" y="62.00000000"/>
+<shape type="rect" width="240.0000000" height="111.0000000"/>
+<fill color="" pattern="none" patternColor="#000000"/>
+<line type="solid" width="3.000000000" color="#ff0000"/>
+</nodeStyle>
+<labelStyle idRef="lc3">
+<text textAlign="left" />
+<font family="Comic Sans MS" size="14" weight="normal" color="#000000" />
+</labelStyle>
+<edgeStyle idRef="e0">
+<line type="solid" width="1.000000000" color="#000000" />
+<sourceStyle type="none" color="#000000" size="1" />
+<targetStyle type="arrow" color="#000000" size="1" />
+<point id="p0e0" x="125.0000000" y="92.00000000"/>
+<point id="p1e0" x="125.0000000" y="32.00000000"/>
+<point id="p2e0" x="312.0000000" y="32.00000000"/>
+<point id="p3e0" x="312.0000000" y="263.0000000"/>
+</edgeStyle>
+<edgeStyle idRef="e1">
+<line type="solid" width="1.000000000" color="#000000" />
+<sourceStyle type="none" color="#000000" size="1" />
+<targetStyle type="arrow" color="#000000" size="1" />
+<point id="p0e1" x="291.0000000" y="274.0000000"/>
+<point id="p1e1" x="163.0000000" y="274.0000000"/>
+</edgeStyle>
+<edgeStyle idRef="e2">
+<line type="solid" width="1.000000000" color="#000000" />
+<sourceStyle type="none" color="#000000" size="1" />
+<targetStyle type="arrow" color="#000000" size="1" />
+<point id="p0e2" x="175.0000000" y="118.0000000"/>
+<point id="p1e2" x="206.0000000" y="118.0000000"/>
+</edgeStyle>
+<edgeStyle idRef="e3">
+<line type="solid" width="1.000000000" color="#000000" />
+<sourceStyle type="none" color="#000000" size="1" />
+<targetStyle type="arrow" color="#000000" size="1" />
+<point id="p0e3" x="124.0000000" y="143.0000000"/>
+<point id="p1e3" x="124.0000000" y="263.0000000"/>
+</edgeStyle>
+<edgeStyle idRef="e4">
+<line type="solid" width="2.000000000" color="#008000" />
+<sourceStyle type="none" color="#008000" size="1" />
+<targetStyle type="arrow" color="#008000" size="1" />
+<point id="p0e4" x="246.0000000" y="118.0000000"/>
+<point id="p1e4" x="463.0000000" y="118.0000000"/>
+</edgeStyle>
+<edgeStyle idRef="e5">
+<line type="solid" width="5.000000000" color="#000000" />
+<sourceStyle type="none" color="#000000" size="1" />
+<targetStyle type="arrow" color="#000000" size="1" />
+<point id="p0e5" x="548.0000000" y="125.0000000"/>
+<point id="p1e5" x="548.0000000" y="192.0000000"/>
+</edgeStyle>
+<edgeStyle idRef="e6">
+<line type="solid" width="7.000000000" color="#008000" />
+<sourceStyle type="none" color="#008000" size="1" />
+<targetStyle type="arrow" color="#008000" size="1" />
+<point id="p0e6" x="153.0000000" y="420.0000000"/>
+<point id="p1e6" x="572.0000000" y="420.0000000"/>
+<point id="p2e6" x="572.0000000" y="207.0000000"/>
+</edgeStyle>
+<edgeStyle idRef="e7">
+<line type="dot" width="3.000000000" color="#c71585" />
+<sourceStyle type="none" color="#c71585" size="1" />
+<targetStyle type="arrow" color="#c71585" size="1" />
+<point id="p0e7" x="776.0000000" y="141.0000000"/>
+<point id="p1e7" x="630.0000000" y="117.0000000"/>
+</edgeStyle>
+</styles>
+</layout>
+</graph>
+</ogml>

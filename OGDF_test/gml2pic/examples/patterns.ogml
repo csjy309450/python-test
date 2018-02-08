@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ogml>
+<graph>
+<structure>
+<node id="n0">
+<label id="ln0">
+<content>rect</content>
+</label>
+</node>
+<node id="n1">
+<label id="ln1">
+<content>roundRect</content>
+</label>
+</node>
+<node id="n2">
+<label id="ln2">
+<content>ellipse</content>
+</label>
+</node>
+<node id="n3">
+<label id="ln3">
+<content>hexagon</content>
+</label>
+</node>
+<node id="n4">
+<label id="ln4">
+<content>rhomb</content>
+</label>
+</node>
+<node id="n5">
+<label id="ln5">
+<content>trapeze</content>
+</label>
+</node>
+<node id="n6">
+<label id="ln6">
+<content>invTrapeze</content>
+</label>
+</node>
+<node id="n7">
+<label id="ln7">
+<content>triangle</content>
+</label>
+</node>
+<node id="n8">
+<label id="ln8">
+<content>invTriangle</content>
+</label>
+</node>
+<node id="n9">
+<label id="ln9">
+<content>octagon</content>
+</label>
+</node>
+<node id="n10">
+<label id="ln10">
+<content>parallelogram</content>
+</label>
+</node>
+<node id="n11">
+<label id="ln11">
+<content>invParallelogram</content>
+</label>
+</node>
+<node id="n12">
+<label id="ln12">
+<content>pentagon</content>
+</label>
+</node>
+<node id="n13">
+<label id="ln13">
+<content>pentagon</content>
+</label>
+</node>
+
+<edge id="e0">
+<source idRef="n0"/>
+<target idRef="n1"/>
+</edge>
+<edge id="e1">
+<source idRef="n1"/>
+<target idRef="n2"/>
+</edge>
+<edge id="e2">
+<source idRef="n2"/>
+<target idRef="n3"/>
+</edge>
+<edge id="e3">
+<source idRef="n3"/>
+<target idRef="n4"/>
+</edge>
+<edge id="e4">
+<source idRef="n4"/>
+<target idRef="n9"/>
+</edge>
+<edge id="e5">
+<source idRef="n9"/>
+<target idRef="n8"/>
+</edge>
+<edge id="e6">
+<source idRef="n8"/>
+<target idRef="n7"/>
+</edge>
+<edge id="e7">
+<source idRef="n7"/>
+<target idRef="n6"/>
+</edge>
+<edge id="e8">
+<source idRef="n6"/>
+<target idRef="n5"/>
+</edge>
+<edge id="e9">
+<source idRef="n5"/>
+<target idRef="n0"/>
+</edge>
+<edge id="e10">
+<source idRef="n1"/>
+<target idRef="n6"/>
+</edge>
+<edge id="e11">
+<source idRef="n2"/>
+<target idRef="n7"/>
+</edge>
+<edge id="e12">
+<source idRef="n3"/>
+<target idRef="n8"/>
+</edge>
+<edge id="e13">
+<source idRef="n10"/>
+<target idRef="n11"/>
+</edge>
+<edge id="e14">
+<source idRef="n11"/>
+<target idRef="n12"/>
+</edge>
+</structure>
+
+<layout>
+<styles>
+<nodeStyle idRef="n0">
+<location x="10.00000000" y="15.00000000"/>
+<shape type="rect" width="60.00000000" height="30.00000000"/>
+<fill color="#ffd700" pattern="solid" patternColor="lime"/>
+<line type="esSolid" width="1.000000000" color="#000000"/>
+</nodeStyle>
+<labelStyle idRef="ln0">
+<text verticalAlign="middle" textAlign="center" />
+<font family="Arial" size="8" weight="normal" color="#000000" />
+</labelStyle>
+<nodeStyle idRef="n1">
+<location x="100.0000000" y="15.00000000"/>
+<shape type="roundedRect" width="60.00000000" height="30.00000000"/>
+<fill color="#ffd700" pattern="dense1" patternColor="lime"/>
+<line type="esSolid" width="1.000000000" color="#000000"/>
+</nodeStyle>
+<labelStyle idRef="ln1">
+<text verticalAlign="middle" textAlign="center" />
+<font family="Arial" size="8" weight="normal" color="#000000" />
+</labelStyle>
+<nodeStyle idRef="n2">
+<location x="190.0000000" y="15.00000000"/>
+<shape type="ellipse" width="60.00000000" height="30.00000000"/>
+<fill color="#ffd700" pattern="dense2" patternColor="lime"/>
+<line type="esSolid" width="1.000000000" color="#000000"/>
+</nodeStyle>
+<labelStyle idRef="ln2">
+<text verticalAlign="middle" textAlign="center" />
+<font family="Arial" size="8" weight="normal" color="#000000" />
+</labelStyle>
+<nodeStyle idRef="n3">
+<location x="280.0000000" y="15.00000000"/>
+<shape type="hexagon" width="60.00000000" height="30.00000000"/>
+<fill color="#ffd700" pattern="dense3" patternColor="lime"/>
+<line type="esSolid" width="1.000000000" color="#000000"/>
+</nodeStyle>
+<labelStyle idRef="ln3">
+<text verticalAlign="middle" textAlign="center" />
+<font family="Arial" size="8" weight="normal" color="#000000" />
+</labelStyle>
+<nodeStyle idRef="n4">
+<location x="370.0000000" y="15.00000000"/>
+<shape type="rhomb" width="60.00000000" height="30.00000000"/>
+<fill color="#ffd700" pattern="dense4" patternColor="lime"/>
+<line type="esSolid" width="1.000000000" color="#000000"/>
+</nodeStyle>
+<labelStyle idRef="ln4">
+<text verticalAlign="middle" textAlign="center" />
+<font family="Arial" size="8" weight="normal" color="#000000" />
+</labelStyle>
+<nodeStyle idRef="n5">
+<location x="10.00000000" y="85.0000000"/>
+<shape type="trapeze" width="60.00000000" height="30.00000000"/>
+<fill color="#ffd700" pattern="dense5" patternColor="lime"/>
+<line type="esSolid" width="1.000000000" color="#000000"/>
+</nodeStyle>
+<labelStyle idRef="ln5">
+<text verticalAlign="middle" textAlign="center" />
+<font family="Arial" size="8" weight="normal" color="#000000" />
+</labelStyle>
+<nodeStyle idRef="n6">
+<location x="100.0000000" y="85.0000000"/>
+<shape type="invTrapeze" width="60.00000000" height="30.00000000"/>
+<fill color="#ffd700" pattern="dense6" patternColor="lime"/>
+<line type="esSolid" width="1.000000000" color="#000000"/>
+</nodeStyle>
+<labelStyle idRef="ln6">
+<text verticalAlign="middle" textAlign="center" />
+<font family="Arial" size="8" weight="normal" color="#000000" />
+</labelStyle>
+<nodeStyle idRef="n7">
+<location x="190.0000000" y="85.0000000"/>
+<shape type="triangle" width="60.00000000" height="30.00000000"/>
+<fill color="#ffd700" pattern="dense7" patternColor="lime"/>
+<line type="esSolid" width="1.000000000" color="#000000"/>
+</nodeStyle>
+<labelStyle idRef="ln7">
+<text verticalAlign="middle" textAlign="center" />
+<font family="Arial" size="8" weight="normal" color="#000000" />
+</labelStyle>
+<nodeStyle idRef="n8">
+<location x="280.0000000" y="85.0000000"/>
+<shape type="invTriangle" width="60.00000000" height="30.00000000"/>
+<fill color="#ffd700" pattern="hor" patternColor="lime"/>
+<line type="esSolid" width="1.000000000" color="#000000"/>
+</nodeStyle>
+<labelStyle idRef="ln8">
+<text verticalAlign="middle" textAlign="center" />
+<font family="Arial" size="6" weight="normal" color="#000000" />
+</labelStyle>
+<nodeStyle idRef="n9">
+<location x="370.0000000" y="85.0000000"/>
+<shape type="octagon" width="60.00000000" height="30.00000000"/>
+<fill color="#ffd700" pattern="ver" patternColor="lime"/>
+<line type="esSolid" width="1.000000000" color="#000000"/>
+</nodeStyle>
+<labelStyle idRef="ln9">
+<text verticalAlign="middle" textAlign="center" />
+<font family="Arial" size="8" weight="normal" color="#000000" />
+</labelStyle>
+
+<nodeStyle idRef="n10">
+<location x="10.0000000" y="155.0000000"/>
+<shape type="parallelogram" width="60.00000000" height="30.00000000"/>
+<fill color="#ffd700" pattern="cross" patternColor="lime"/>
+<line type="esSolid" width="1.000000000" color="#000000"/>
+</nodeStyle>
+<labelStyle idRef="ln10">
+<text verticalAlign="middle" textAlign="center" />
+<font family="Arial" size="7" weight="normal" color="#000000" />
+</labelStyle>
+<nodeStyle idRef="n11">
+<location x="100.0000000" y="155.0000000"/>
+<shape type="invParallelogram" width="60.00000000" height="30.00000000"/>
+<fill color="#ffd700" pattern="bDiag" patternColor="lime"/>
+<line type="esSolid" width="1.000000000" color="#000000"/>
+</nodeStyle>
+<labelStyle idRef="ln11">
+<text verticalAlign="middle" textAlign="center" />
+<font family="Arial" size="6" weight="normal" color="#000000" />
+</labelStyle>
+<nodeStyle idRef="n12">
+<location x="190.0000000" y="155.0000000"/>
+<shape type="pentagon" width="60.00000000" height="30.00000000"/>
+<fill color="#ffd700" pattern="fDiag" patternColor="lime"/>
+<line type="esSolid" width="1.000000000" color="#000000"/>
+</nodeStyle>
+<labelStyle idRef="ln12">
+<text verticalAlign="middle" textAlign="center" />
+<font family="Arial" size="8" weight="normal" color="#000000" />
+</labelStyle>
+<nodeStyle idRef="n13">
+<location x="280.0000000" y="155.0000000"/>
+<shape type="pentagon" width="60.00000000" height="30.00000000"/>
+<fill color="#ffd700" pattern="diagCross" patternColor="lime"/>
+<line type="esSolid" width="1.000000000" color="#000000"/>
+</nodeStyle>
+<labelStyle idRef="ln13">
+<text verticalAlign="middle" textAlign="center" />
+<font family="Arial" size="8" weight="normal" color="#000000" />
+</labelStyle>
+
+<edgeStyle idRef="e0">
+<line type="esSolid" width="1.000000000" color="#000000" />
+<sourceStyle type="none" color="#000000" size="1" />
+<targetStyle type="none" color="#000000" size="1" />
+<point id="p0e0" x="40.00000000" y="30.00000000"/>
+<point id="p1e0" x="110.0000000" y="30.00000000"/>
+</edgeStyle>
+<edgeStyle idRef="e1">
+<line type="esSolid" width="1.000000000" color="#000000" />
+<sourceStyle type="none" color="#000000" size="1" />
+<targetStyle type="none" color="#000000" size="1" />
+<point id="p0e1" x="110.0000000" y="30.00000000"/>
+<point id="p1e1" x="210.0000000" y="30.00000000"/>
+</edgeStyle>
+<edgeStyle idRef="e2">
+<line type="esSolid" width="1.000000000" color="#000000" />
+<sourceStyle type="none" color="#000000" size="1" />
+<targetStyle type="none" color="#000000" size="1" />
+<point id="p0e2" x="210.0000000" y="30.00000000"/>
+<point id="p1e2" x="310.0000000" y="30.00000000"/>
+</edgeStyle>
+<edgeStyle idRef="e3">
+<line type="esSolid" width="1.000000000" color="#000000" />
+<sourceStyle type="none" color="#000000" size="1" />
+<targetStyle type="none" color="#000000" size="1" />
+<point id="p0e3" x="310.0000000" y="30.00000000"/>
+<point id="p1e3" x="400.0000000" y="30.00000000"/>
+</edgeStyle>
+<edgeStyle idRef="e4">
+<line type="esSolid" width="1.000000000" color="#000000" />
+<sourceStyle type="none" color="#000000" size="1" />
+<targetStyle type="none" color="#000000" size="1" />
+<point id="p0e4" x="400.0000000" y="30.00000000"/>
+<point id="p1e4" x="400.0000000" y="100.00000000"/>
+</edgeStyle>
+
+<edgeStyle idRef="e5">
+<line type="esSolid" width="1.000000000" color="#000000" />
+<sourceStyle type="none" color="#000000" size="1" />
+<targetStyle type="none" color="#000000" size="1" />
+<point id="p0e5" x="400.0000000" y="100.0000000"/>
+<point id="p1e5" x="310.0000000" y="100.0000000"/>
+</edgeStyle>
+<edgeStyle idRef="e6">
+<line type="esSolid" width="1.000000000" color="#000000" />
+<sourceStyle type="none" color="#000000" size="1" />
+<targetStyle type="none" color="#000000" size="1" />
+<point id="p0e6" x="310.0000000" y="100.0000000"/>
+<point id="p1e6" x="220.0000000" y="100.0000000"/>
+</edgeStyle>
+<edgeStyle idRef="e7">
+<line type="esSolid" width="1.000000000" color="#000000" />
+<sourceStyle type="none" color="#000000" size="1" />
+<targetStyle type="none" color="#000000" size="1" />
+<point id="p0e7" x="220.0000000" y="100.0000000"/>
+<point id="p1e7" x="130.0000000" y="100.0000000"/>
+</edgeStyle>
+<edgeStyle idRef="e8">
+<line type="esSolid" width="1.000000000" color="#000000" />
+<sourceStyle type="none" color="#000000" size="1" />
+<targetStyle type="none" color="#000000" size="1" />
+<point id="p0e8" x="130.0000000" y="100.0000000"/>
+<point id="p1e8" x="40.00000000" y="100.0000000"/>
+</edgeStyle>
+<edgeStyle idRef="e9">
+<line type="esSolid" width="1.000000000" color="#000000" />
+<sourceStyle type="none" color="#000000" size="1" />
+<targetStyle type="none" color="#000000" size="1" />
+<point id="p0e9" x="40.00000000" y="100.00000000"/>
+<point id="p2e9" x="40.00000000" y="30.00000000"/>
+</edgeStyle>
+<edgeStyle idRef="e10">
+<line type="esSolid" width="1.000000000" color="#000000" />
+<sourceStyle type="none" color="#000000" size="1" />
+<targetStyle type="none" color="#000000" size="1" />
+<point id="p0e10" x="130.0000000" y="30.00000000"/>
+<point id="p2e10" x="130.0000000" y="100.00000000"/>
+</edgeStyle>
+<edgeStyle idRef="e11">
+<line type="esSolid" width="1.000000000" color="#000000" />
+<sourceStyle type="none" color="#000000" size="1" />
+<targetStyle type="none" color="#000000" size="1" />
+<point id="p0e11" x="220.0000000" y="30.00000000"/>
+<point id="p2e11" x="220.0000000" y="100.00000000"/>
+</edgeStyle>
+<edgeStyle idRef="e12">
+<line type="esSolid" width="1.000000000" color="#000000" />
+<sourceStyle type="none" color="#000000" size="1" />
+<targetStyle type="none" color="#000000" size="1" />
+<point id="p0e12" x="310.0000000" y="30.00000000"/>
+<point id="p2e12" x="310.0000000" y="100.00000000"/>
+</edgeStyle>
+
+<edgeStyle idRef="e13">
+<line type="esSolid" width="1.000000000" color="#000000" />
+<sourceStyle type="none" color="#000000" size="1" />
+<targetStyle type="none" color="#000000" size="1" />
+<point id="p0e13" x="40.0000000" y="170.00000000"/>
+<point id="p2e13" x="110.0000000" y="170.00000000"/>
+</edgeStyle>
+<edgeStyle idRef="e14">
+<line type="esSolid" width="1.000000000" color="#000000" />
+<sourceStyle type="none" color="#000000" size="1" />
+<targetStyle type="none" color="#000000" size="1" />
+<point id="p0e14" x="110.0000000" y="170.00000000"/>
+<point id="p2e14" x="210.0000000" y="170.00000000"/>
+</edgeStyle>
+</styles>
+</layout>
+</graph>
+</ogml>

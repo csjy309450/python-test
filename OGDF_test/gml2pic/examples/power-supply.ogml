@@ -1,0 +1,748 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ogml>
+<graph>
+<structure>
+<node id="n0">
+<label id="ln0">
+<content>&lt;html&gt;
+&lt;head&gt;
+&lt;meta name="qrichtext" content="1" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p align="center"&gt;
+&lt;span style="font-family:Arial;font-size:12pt;font-weight:600"&gt;
+VIAG AG&lt;/span&gt;
+&lt;/p&gt;
+&lt;p align="center"&gt;
+&lt;span style="font-family:Arial;font-size:12pt;font-weight:400"&gt;
+GK 1330,7 Mio. DM&lt;/span&gt;
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</content>
+</label>
+</node>
+<node id="n1">
+<label id="ln1">
+<content>&lt;html&gt;
+&lt;head&gt;
+&lt;meta name="qrichtext" content="1" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p align="center"&gt;
+&lt;span style="font-family:Arial;font-size:12pt;font-weight:600"&gt;
+VEAG&lt;/span&gt;
+&lt;/p&gt;
+&lt;p align="center"&gt;
+&lt;span style="font-family:Arial;font-size:12pt;font-weight:400"&gt;
+Vereinigte Elektrizitätswerke AG&lt;/span&gt;
+&lt;/p&gt;
+&lt;p align="center"&gt;
+&lt;span style="font-family:Arial;font-size:12pt;font-weight:400"&gt;
+GK: 500 Mio. DM&lt;/span&gt;
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</content>
+</label>
+</node>
+<node id="n2">
+<label id="ln2">
+<content>&lt;html&gt;
+&lt;head&gt;
+&lt;meta name="qrichtext" content="1" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p align="center"&gt;
+&lt;span style="font-family:Arial;font-size:12pt;font-weight:600"&gt;
+Bayernwerk AG&lt;/span&gt;
+&lt;/p&gt;
+&lt;p align="center"&gt;
+&lt;span style="font-family:Arial;font-size:12pt;font-weight:400"&gt;
+GK: 1460,6 Mio. DM&lt;/span&gt;
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</content>
+</label>
+</node>
+<node id="n3">
+<label id="ln3">
+<content>&lt;html&gt;
+&lt;head&gt;
+&lt;meta name="qrichtext" content="1" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p align="center"&gt;
+&lt;span style="font-family:Arial;font-size:12pt;font-weight:600"&gt;
+Contigas AG&lt;/span&gt;
+&lt;/p&gt;
+&lt;p align="center"&gt;
+&lt;span style="font-family:Arial;font-size:12pt;font-weight:400"&gt;
+GK: 200 Mio. DM&lt;/span&gt;
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</content>
+</label>
+</node>
+<node id="n4">
+<label id="ln4">
+<content>&lt;html&gt;
+&lt;head&gt;
+&lt;meta name="qrichtext" content="1" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p align="center"&gt;
+&lt;span style="font-family:Arial;font-size:12pt;font-weight:600"&gt;
+VEBA AG&lt;/span&gt;
+&lt;/p&gt;
+&lt;p align="center"&gt;
+&lt;span style="font-family:Arial;font-size:12pt;font-weight:400"&gt;
+GK: 2486 Mio. DM&lt;/span&gt;
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</content>
+</label>
+</node>
+<node id="n5">
+<label id="ln5">
+<content>&lt;html&gt;
+&lt;head&gt;
+&lt;meta name="qrichtext" content="1" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p align="center"&gt;
+&lt;span style="font-family:Arial;font-size:12pt;font-weight:600"&gt;
+Bewag AG&lt;/span&gt;
+&lt;/p&gt;
+&lt;p align="center"&gt;
+&lt;span style="font-family:Arial;font-size:12pt;font-weight:400"&gt;
+GK: 1120 Mio. DM&lt;/span&gt;
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</content>
+</label>
+</node>
+<node id="n6">
+<label id="ln6">
+<content>&lt;html&gt;
+&lt;head&gt;
+&lt;meta name="qrichtext" content="1" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p align="center"&gt;
+&lt;span style="font-family:Arial;font-size:12pt;font-weight:600"&gt;
+PreussenElektra AG&lt;/span&gt;
+&lt;/p&gt;
+&lt;p align="center"&gt;
+&lt;span style="font-family:Arial;font-size:12pt;font-weight:400"&gt;
+GK: 1250 Mio. DM&lt;/span&gt;
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</content>
+</label>
+</node>
+<node id="n7">
+<label id="ln7">
+<content>&lt;html&gt;
+&lt;head&gt;
+&lt;meta name="qrichtext" content="1" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p align="center"&gt;
+&lt;span style="font-family:Arial;font-size:12pt;font-weight:600"&gt;
+Southern Energy Holding&lt;/span&gt;
+&lt;/p&gt;
+&lt;p align="center"&gt;
+&lt;span style="font-family:Arial;font-size:12pt;font-weight:400"&gt;
+Bet. Gesellschaft mbH&lt;/span&gt;
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</content>
+</label>
+</node>
+<node id="n8">
+<label id="ln8">
+<content>&lt;html&gt;
+&lt;head&gt;
+&lt;meta name="qrichtext" content="1" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p align="center"&gt;
+&lt;span style="font-family:Arial;font-size:12pt;font-weight:600"&gt;
+Sydkraft AB&lt;/span&gt;
+&lt;/p&gt;
+&lt;p align="center"&gt;
+&lt;span style="font-family:Arial;font-size:12pt;font-weight:400"&gt;
+Malmö&lt;/span&gt;
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</content>
+</label>
+</node>
+<node id="n9">
+<label id="ln9">
+<content>&lt;html&gt;
+&lt;head&gt;
+&lt;meta name="qrichtext" content="1" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p align="center" dir="ltr"&gt;
+&lt;span style="font-family:Arial;font-size:12pt;font-weight:600"&gt;
+HEW&lt;/span&gt;
+&lt;/p&gt;
+&lt;p align="center" dir="ltr"&gt;
+&lt;span style="font-family:Arial;font-size:12pt;font-weight:400"&gt;
+Hamburgische Elektrizitäts-Werke AG&lt;/span&gt;
+&lt;/p&gt;
+&lt;p align="center"&gt;
+&lt;span style="font-family:Arial;font-size:12pt;font-weight:400"&gt;
+GK: 460 Mio. DM&lt;/span&gt;
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</content>
+</label>
+</node>
+<node id="n10">
+<label id="ln10">
+<content>&lt;html&gt;
+&lt;head&gt;
+&lt;meta name="qrichtext" content="1" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p align="center"&gt;
+&lt;span style="font-family:Arial;font-size:12pt;font-weight:600"&gt;
+Energie-Verwaltungs GmbH&lt;/span&gt;
+&lt;/p&gt;
+&lt;p align="center"&gt;
+&lt;span style="font-family:Arial;font-size:12pt;font-weight:400"&gt;
+StK: 241,52 Mio. DM&lt;/span&gt;
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</content>
+</label>
+</node>
+<node id="n11">
+<label id="ln11">
+<content>&lt;html&gt;
+&lt;head&gt;
+&lt;meta name="qrichtext" content="1" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p align="center"&gt;
+&lt;span style="font-family:Arial;font-size:12pt;font-weight:600"&gt;
+RWE Energie AG&lt;/span&gt;
+&lt;/p&gt;
+&lt;p align="center"&gt;
+&lt;span style="font-family:Arial;font-size:12pt;font-weight:400"&gt;
+GK: 2300 Mio. DM&lt;/span&gt;
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</content>
+</label>
+</node>
+<node id="n12">
+<label id="ln12">
+<content>&lt;html&gt;
+&lt;head&gt;
+&lt;meta name="qrichtext" content="1" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p align="center"&gt;
+&lt;span style="font-family:Arial;font-size:12pt;font-weight:600"&gt;
+EnBW&lt;/span&gt;
+&lt;/p&gt;
+&lt;p align="center"&gt;
+&lt;span style="font-family:Arial;font-size:12pt;font-weight:400"&gt;
+Energie Baden-Württemberg AG&lt;/span&gt;
+&lt;/p&gt;
+&lt;p align="center"&gt;
+&lt;span style="font-family:Arial;font-size:12pt;font-weight:400"&gt;
+GK: 1250 Mio. DM&lt;/span&gt;
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</content>
+</label>
+</node>
+<node id="n13">
+<label id="ln13">
+<content>&lt;html&gt;
+&lt;head&gt;
+&lt;meta name="qrichtext" content="1" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p align="center"&gt;
+&lt;span style="font-family:Arial;font-size:12pt;font-weight:600"&gt;
+EBH GmbH&lt;/span&gt;
+&lt;/p&gt;
+&lt;p align="center"&gt;
+&lt;span style="font-family:Arial;font-size:12pt;font-weight:400"&gt;
+StK: 548,01 Mio. DM&lt;/span&gt;
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</content>
+</label>
+</node>
+<node id="n14">
+<label id="ln14">
+<content>&lt;html&gt;
+&lt;head&gt;
+&lt;meta name="qrichtext" content="1" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p align="center"&gt;
+&lt;span style="font-family:Arial;font-size:12pt;font-weight:600"&gt;
+VEW Energie AG&lt;/span&gt;
+&lt;/p&gt;
+&lt;p align="center"&gt;
+&lt;span style="font-family:Arial;font-size:12pt;font-weight:400"&gt;
+GK: 800 Mio. DM&lt;/span&gt;
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</content>
+</label>
+</node>
+<node id="n15">
+<label id="ln15">
+<content>&lt;html&gt;
+&lt;head&gt;
+&lt;meta name="qrichtext" content="1" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p align="center"&gt;
+&lt;span style="font-family:Arial;font-size:12pt;font-weight:600"&gt;
+VEW AG&lt;/span&gt;
+&lt;/p&gt;
+&lt;p align="center"&gt;
+&lt;span style="font-family:Arial;font-size:12pt;font-weight:400"&gt;
+GK: 1000 Mio. DM&lt;/span&gt;
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</content>
+</label>
+</node>
+<node id="n16">
+<label id="ln16">
+<content>&lt;html&gt;
+&lt;head&gt;
+&lt;meta name="qrichtext" content="1" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p align="center"&gt;
+&lt;span style="font-family:Arial;font-size:12pt;font-weight:600"&gt;
+RWE AG&lt;/span&gt;
+&lt;/p&gt;
+&lt;p align="center"&gt;
+&lt;span style="font-family:Arial;font-size:12pt;font-weight:400"&gt;
+GK: 2777 Mio. DM&lt;/span&gt;
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</content>
+</label>
+</node>
+<edge id="e0">
+<source idRef="n0"/>
+<target idRef="n2"/>
+</edge>
+<edge id="e1">
+<source idRef="n2"/>
+<target idRef="n1"/>
+</edge>
+<edge id="e2">
+<source idRef="n13"/>
+<target idRef="n1"/>
+</edge>
+<edge id="e3">
+<source idRef="n2"/>
+<target idRef="n15"/>
+</edge>
+<edge id="e4">
+<source idRef="n2"/>
+<target idRef="n3"/>
+</edge>
+<edge id="e5">
+<source idRef="n2"/>
+<target idRef="n5"/>
+</edge>
+<edge id="e6">
+<source idRef="n6"/>
+<target idRef="n5"/>
+</edge>
+<edge id="e7">
+<source idRef="n6"/>
+<target idRef="n9"/>
+</edge>
+<edge id="e8">
+<source idRef="n7"/>
+<target idRef="n5"/>
+</edge>
+<edge id="e9">
+<source idRef="n6"/>
+<target idRef="n1"/>
+</edge>
+<edge id="e10">
+<source idRef="n4"/>
+<target idRef="n6"/>
+</edge>
+<edge id="e11">
+<source idRef="n8"/>
+<target idRef="n4"/>
+</edge>
+<edge id="e12">
+<source idRef="n6"/>
+<target idRef="n8"/>
+</edge>
+<edge id="e13">
+<source idRef="n8"/>
+<target idRef="n9"/>
+</edge>
+<edge id="e14">
+<source idRef="n9"/>
+<target idRef="n8"/>
+</edge>
+<edge id="e15">
+<source idRef="n16"/>
+<target idRef="n11"/>
+</edge>
+<edge id="e16">
+<source idRef="n16"/>
+<target idRef="n10"/>
+</edge>
+<edge id="e17">
+<source idRef="n15"/>
+<target idRef="n14"/>
+</edge>
+<edge id="e18">
+<source idRef="n12"/>
+<target idRef="n13"/>
+</edge>
+<edge id="e19">
+<source idRef="n14"/>
+<target idRef="n13"/>
+</edge>
+<edge id="e20">
+<source idRef="n10"/>
+<target idRef="n15"/>
+</edge>
+<edge id="e21">
+<source idRef="n9"/>
+<target idRef="n13"/>
+</edge>
+<edge id="e22">
+<source idRef="n11"/>
+<target idRef="n1"/>
+</edge>
+<edge id="e23">
+<source idRef="n3"/>
+<target idRef="n10"/>
+</edge>
+<edge id="e24">
+<source idRef="n5"/>
+<target idRef="n13"/>
+</edge>
+</structure>
+<layout>
+<styles>
+<nodeStyle idRef="n0">
+<location x="20.50000000" y="183.5000000"/>
+<shape type="rect" width="119.0000000" height="55.00000000"/>
+<fill color="#f0e68c" pattern="solid" patternColor="#000000"/>
+<line type="solid" width="2.000000000" color="#4682b4"/>
+</nodeStyle>
+<nodeStyle idRef="n1">
+<location x="890.5000000" y="44.00000000"/>
+<shape type="rect" width="197.0000000" height="82.00000000"/>
+<fill color="#f0e68c" pattern="solid" patternColor="#000000"/>
+<line type="solid" width="2.000000000" color="#4682b4"/>
+</nodeStyle>
+<nodeStyle idRef="n2">
+<location x="164.5000000" y="185.5000000"/>
+<shape type="rect" width="127.0000000" height="51.00000000"/>
+<fill color="#f0e68c" pattern="solid" patternColor="#000000"/>
+<line type="solid" width="2.000000000" color="#4682b4"/>
+</nodeStyle>
+<nodeStyle idRef="n3">
+<location x="144.0000000" y="608.0000000"/>
+<shape type="rect" width="112.0000000" height="52.00000000"/>
+<fill color="#f0e68c" pattern="solid" patternColor="#000000"/>
+<line type="solid" width="2.000000000" color="#4682b4"/>
+</nodeStyle>
+<nodeStyle idRef="n4">
+<location x="555.0000000" y="239.5000000"/>
+<shape type="rect" width="112.0000000" height="53.00000000"/>
+<fill color="#f0e68c" pattern="solid" patternColor="#000000"/>
+<line type="solid" width="2.000000000" color="#4682b4"/>
+</nodeStyle>
+<nodeStyle idRef="n5">
+<location x="466.5000000" y="165.5000000"/>
+<shape type="rect" width="127.0000000" height="53.00000000"/>
+<fill color="#f0e68c" pattern="solid" patternColor="#000000"/>
+<line type="solid" width="2.000000000" color="#4682b4"/>
+</nodeStyle>
+<nodeStyle idRef="n6">
+<location x="715.0000000" y="124.5000000"/>
+<shape type="rect" width="142.0000000" height="53.00000000"/>
+<fill color="#f0e68c" pattern="solid" patternColor="#000000"/>
+<line type="solid" width="2.000000000" color="#4682b4"/>
+</nodeStyle>
+<nodeStyle idRef="n7">
+<location x="398.0000000" y="67.50000000"/>
+<shape type="rect" width="178.0000000" height="53.00000000"/>
+<fill color="#f0e68c" pattern="solid" patternColor="#000000"/>
+<line type="solid" width="2.000000000" color="#4682b4"/>
+</nodeStyle>
+<nodeStyle idRef="n8">
+<location x="688.5000000" y="240.5000000"/>
+<shape type="rect" width="93.00000000" height="51.00000000"/>
+<fill color="#f0e68c" pattern="solid" patternColor="#000000"/>
+<line type="solid" width="2.000000000" color="#4682b4"/>
+</nodeStyle>
+<nodeStyle idRef="n9">
+<location x="827.5000000" y="231.0000000"/>
+<shape type="rect" width="141.0000000" height="94.00000000"/>
+<fill color="#f0e68c" pattern="solid" patternColor="#000000"/>
+<line type="solid" width="2.000000000" color="#4682b4"/>
+</nodeStyle>
+<nodeStyle idRef="n10">
+<location x="504.5000000" y="602.5000000"/>
+<shape type="rect" width="151.0000000" height="67.00000000"/>
+<fill color="#f0e68c" pattern="solid" patternColor="#000000"/>
+<line type="solid" width="2.000000000" color="#4682b4"/>
+</nodeStyle>
+<nodeStyle idRef="n11">
+<location x="1111.000000" y="59.00000000"/>
+<shape type="rect" width="130.0000000" height="52.00000000"/>
+<fill color="#f0e68c" pattern="solid" patternColor="#000000"/>
+<line type="solid" width="2.000000000" color="#4682b4"/>
+</nodeStyle>
+<nodeStyle idRef="n12">
+<location x="297.5000000" y="363.5000000"/>
+<shape type="rect" width="191.0000000" height="77.00000000"/>
+<fill color="#f0e68c" pattern="solid" patternColor="#000000"/>
+<line type="solid" width="2.000000000" color="#4682b4"/>
+</nodeStyle>
+<nodeStyle idRef="n13">
+<location x="512.5000000" y="374.0000000"/>
+<shape type="rect" width="139.0000000" height="58.00000000"/>
+<fill color="#f0e68c" pattern="solid" patternColor="#000000"/>
+<line type="solid" width="2.000000000" color="#4682b4"/>
+</nodeStyle>
+<nodeStyle idRef="n14">
+<location x="519.0000000" y="455.5000000"/>
+<shape type="rect" width="122.0000000" height="51.00000000"/>
+<fill color="#f0e68c" pattern="solid" patternColor="#000000"/>
+<line type="solid" width="2.000000000" color="#4682b4"/>
+</nodeStyle>
+<nodeStyle idRef="n15">
+<location x="517.5000000" y="531.5000000"/>
+<shape type="rect" width="125.0000000" height="47.00000000"/>
+<fill color="#f0e68c" pattern="solid" patternColor="#000000"/>
+<line type="solid" width="2.000000000" color="#4682b4"/>
+</nodeStyle>
+<nodeStyle idRef="n16">
+<location x="1116.000000" y="607.0000000"/>
+<shape type="rect" width="120.0000000" height="54.00000000"/>
+<fill color="#f0e68c" pattern="solid" patternColor="#000000"/>
+<line type="solid" width="2.000000000" color="#4682b4"/>
+</nodeStyle>
+<edgeStyle idRef="e0">
+<line type="solid" width="2.000000000" color="#000000" />
+<sourceStyle type="none" color="#000000" size="1" />
+<targetStyle type="arrow" color="#000000" size="1" />
+<point id="p0e0" x="81.00000000" y="211.0000000"/>
+<point id="p1e0" x="141.0000000" y="211.0000000"/>
+<point id="p2e0" x="164.0000000" y="211.0000000"/>
+<point id="p3e0" x="229.0000000" y="211.0000000"/>
+</edgeStyle>
+<edgeStyle idRef="e1">
+<line type="solid" width="2.000000000" color="#000000" />
+<sourceStyle type="none" color="#000000" size="1" />
+<targetStyle type="arrow" color="#000000" size="1" />
+<point id="p0e1" x="227.0000000" y="187.0000000"/>
+<point id="p1e1" x="227.0000000" y="20.00000000"/>
+<point id="p2e1" x="992.0000000" y="20.00000000"/>
+<point id="p3e1" x="992.0000000" y="44.00000000"/>
+</edgeStyle>
+<edgeStyle idRef="e2">
+<line type="solid" width="2.000000000" color="#000000" />
+<sourceStyle type="none" color="#000000" size="1" />
+<targetStyle type="arrow" color="#000000" size="1" />
+<point id="p0e2" x="651.0000000" y="403.0000000"/>
+<point id="p1e2" x="992.0000000" y="403.0000000"/>
+<point id="p2e2" x="992.0000000" y="125.0000000"/>
+</edgeStyle>
+<edgeStyle idRef="e3">
+<line type="solid" width="2.000000000" color="#000000" />
+<sourceStyle type="none" color="#000000" size="1" />
+<targetStyle type="arrow" color="#000000" size="1" />
+<point id="p0e3" x="274.0000000" y="235.0000000"/>
+<point id="p1e3" x="274.0000000" y="556.0000000"/>
+<point id="p2e3" x="518.0000000" y="556.0000000"/>
+</edgeStyle>
+<edgeStyle idRef="e4">
+<line type="solid" width="2.000000000" color="#000000" />
+<sourceStyle type="none" color="#000000" size="1" />
+<targetStyle type="arrow" color="#000000" size="1" />
+<point id="p0e4" x="203.0000000" y="235.0000000"/>
+<point id="p1e4" x="203.0000000" y="608.0000000"/>
+</edgeStyle>
+<edgeStyle idRef="e5">
+<line type="solid" width="2.000000000" color="#000000" />
+<sourceStyle type="none" color="#000000" size="1" />
+<targetStyle type="arrow" color="#000000" size="1" />
+<point id="p0e5" x="229.0000000" y="211.0000000"/>
+<point id="p1e5" x="294.0000000" y="192.0000000"/>
+<point id="p2e5" x="466.0000000" y="192.0000000"/>
+<point id="p3e5" x="530.0000000" y="192.0000000"/>
+</edgeStyle>
+<edgeStyle idRef="e6">
+<line type="solid" width="2.000000000" color="#000000" />
+<sourceStyle type="none" color="#000000" size="1" />
+<targetStyle type="arrow" color="#000000" size="1" />
+<point id="p0e6" x="786.0000000" y="151.0000000"/>
+<point id="p1e6" x="714.0000000" y="144.0000000"/>
+<point id="p2e6" x="557.0000000" y="144.0000000"/>
+<point id="p3e6" x="557.0000000" y="168.0000000"/>
+</edgeStyle>
+<edgeStyle idRef="e7">
+<line type="solid" width="2.000000000" color="#000000" />
+<sourceStyle type="none" color="#000000" size="1" />
+<targetStyle type="arrow" color="#000000" size="1" />
+<point id="p0e7" x="786.0000000" y="151.0000000"/>
+<point id="p1e7" x="858.0000000" y="149.0000000"/>
+<point id="p2e7" x="896.0000000" y="149.0000000"/>
+<point id="p3e7" x="896.0000000" y="230.0000000"/>
+<point id="p4e7" x="898.0000000" y="278.0000000"/>
+</edgeStyle>
+<edgeStyle idRef="e8">
+<line type="solid" width="2.000000000" color="#000000" />
+<sourceStyle type="none" color="#000000" size="1" />
+<targetStyle type="arrow" color="#000000" size="1" />
+<point id="p0e8" x="485.0000000" y="120.0000000"/>
+<point id="p1e8" x="485.0000000" y="168.0000000"/>
+</edgeStyle>
+<edgeStyle idRef="e9">
+<line type="solid" width="2.000000000" color="#000000" />
+<sourceStyle type="none" color="#000000" size="1" />
+<targetStyle type="arrow" color="#000000" size="1" />
+<point id="p0e9" x="786.0000000" y="125.0000000"/>
+<point id="p1e9" x="786.0000000" y="87.00000000"/>
+<point id="p2e9" x="891.0000000" y="87.00000000"/>
+</edgeStyle>
+<edgeStyle idRef="e10">
+<line type="solid" width="2.000000000" color="#000000" />
+<sourceStyle type="none" color="#000000" size="1" />
+<targetStyle type="arrow" color="#000000" size="1" />
+<point id="p0e10" x="619.0000000" y="240.0000000"/>
+<point id="p1e10" x="619.0000000" y="168.0000000"/>
+<point id="p2e10" x="714.0000000" y="168.0000000"/>
+<point id="p3e10" x="786.0000000" y="151.0000000"/>
+</edgeStyle>
+<edgeStyle idRef="e11">
+<line type="solid" width="2.000000000" color="#000000" />
+<sourceStyle type="none" color="#000000" size="1" />
+<targetStyle type="arrow" color="#000000" size="1" />
+<point id="p0e11" x="690.0000000" y="269.0000000"/>
+<point id="p1e11" x="666.0000000" y="269.0000000"/>
+</edgeStyle>
+<edgeStyle idRef="e12">
+<line type="solid" width="2.000000000" color="#000000" />
+<sourceStyle type="none" color="#000000" size="1" />
+<targetStyle type="arrow" color="#000000" size="1" />
+<point id="p0e12" x="733.0000000" y="177.0000000"/>
+<point id="p1e12" x="733.0000000" y="240.0000000"/>
+<point id="p2e12" x="736.0000000" y="266.0000000"/>
+</edgeStyle>
+<edgeStyle idRef="e13">
+<line type="solid" width="2.000000000" color="#000000" />
+<sourceStyle type="none" color="#000000" size="1" />
+<targetStyle type="arrow" color="#000000" size="1" />
+<point id="p0e13" x="781.0000000" y="283.0000000"/>
+<point id="p1e13" x="831.0000000" y="283.0000000"/>
+</edgeStyle>
+<edgeStyle idRef="e14">
+<line type="solid" width="2.000000000" color="#000000" />
+<sourceStyle type="none" color="#000000" size="1" />
+<targetStyle type="arrow" color="#000000" size="1" />
+<point id="p0e14" x="830.0000000" y="253.0000000"/>
+<point id="p1e14" x="781.0000000" y="253.0000000"/>
+</edgeStyle>
+<edgeStyle idRef="e15">
+<line type="solid" width="2.000000000" color="#000000" />
+<sourceStyle type="none" color="#000000" size="1" />
+<targetStyle type="arrow" color="#000000" size="1" />
+<point id="p0e15" x="1178.000000" y="608.0000000"/>
+<point id="p1e15" x="1178.000000" y="110.0000000"/>
+</edgeStyle>
+<edgeStyle idRef="e16">
+<line type="solid" width="2.000000000" color="#000000" />
+<sourceStyle type="none" color="#000000" size="1" />
+<targetStyle type="arrow" color="#000000" size="1" />
+<point id="p0e16" x="1116.000000" y="637.0000000"/>
+<point id="p1e16" x="657.0000000" y="637.0000000"/>
+<point id="p2e16" x="580.0000000" y="637.0000000"/>
+</edgeStyle>
+<edgeStyle idRef="e17">
+<line type="solid" width="2.000000000" color="#000000" />
+<sourceStyle type="none" color="#000000" size="1" />
+<targetStyle type="arrow" color="#000000" size="1" />
+<point id="p0e17" x="580.0000000" y="532.0000000"/>
+<point id="p1e17" x="580.0000000" y="508.0000000"/>
+<point id="p2e17" x="580.0000000" y="481.0000000"/>
+</edgeStyle>
+<edgeStyle idRef="e18">
+<line type="solid" width="2.000000000" color="#000000" />
+<sourceStyle type="none" color="#000000" size="1" />
+<targetStyle type="arrow" color="#000000" size="1" />
+<point id="p0e18" x="394.0000000" y="403.0000000"/>
+<point id="p1e18" x="490.0000000" y="403.0000000"/>
+<point id="p2e18" x="513.0000000" y="403.0000000"/>
+</edgeStyle>
+<edgeStyle idRef="e19">
+<line type="solid" width="2.000000000" color="#000000" />
+<sourceStyle type="none" color="#000000" size="1" />
+<targetStyle type="arrow" color="#000000" size="1" />
+<point id="p0e19" x="580.0000000" y="481.0000000"/>
+<point id="p1e19" x="580.0000000" y="455.0000000"/>
+<point id="p2e19" x="580.0000000" y="431.0000000"/>
+</edgeStyle>
+<edgeStyle idRef="e20">
+<line type="solid" width="2.000000000" color="#000000" />
+<sourceStyle type="none" color="#000000" size="1" />
+<targetStyle type="arrow" color="#000000" size="1" />
+<point id="p0e20" x="580.0000000" y="603.0000000"/>
+<point id="p1e20" x="580.0000000" y="578.0000000"/>
+</edgeStyle>
+<edgeStyle idRef="e21">
+<line type="solid" width="2.000000000" color="#000000" />
+<sourceStyle type="none" color="#000000" size="1" />
+<targetStyle type="arrow" color="#000000" size="1" />
+<point id="p0e21" x="898.0000000" y="278.0000000"/>
+<point id="p1e21" x="848.0000000" y="326.0000000"/>
+<point id="p2e21" x="848.0000000" y="350.0000000"/>
+<point id="p3e21" x="633.0000000" y="350.0000000"/>
+<point id="p4e21" x="633.0000000" y="374.0000000"/>
+</edgeStyle>
+<edgeStyle idRef="e22">
+<line type="solid" width="2.000000000" color="#000000" />
+<sourceStyle type="none" color="#000000" size="1" />
+<targetStyle type="arrow" color="#000000" size="1" />
+<point id="p0e22" x="1111.000000" y="87.00000000"/>
+<point id="p1e22" x="1087.000000" y="87.00000000"/>
+</edgeStyle>
+<edgeStyle idRef="e23">
+<line type="solid" width="2.000000000" color="#000000" />
+<sourceStyle type="none" color="#000000" size="1" />
+<targetStyle type="arrow" color="#000000" size="1" />
+<point id="p0e23" x="255.0000000" y="637.0000000"/>
+<point id="p1e23" x="504.0000000" y="637.0000000"/>
+<point id="p2e23" x="580.0000000" y="637.0000000"/>
+</edgeStyle>
+<edgeStyle idRef="e24">
+<line type="solid" width="2.000000000" color="#000000" />
+<sourceStyle type="none" color="#000000" size="1" />
+<targetStyle type="arrow" color="#000000" size="1" />
+<point id="p0e24" x="533.0000000" y="216.0000000"/>
+<point id="p1e24" x="533.0000000" y="374.0000000"/>
+</edgeStyle>
+</styles>
+</layout>
+</graph>
+</ogml>

@@ -1,0 +1,9 @@
+#-------------------------------------------------
+# user configuration file
+#
+# edit this file to define required file paths on
+# your system
+#-------------------------------------------------
+
+# path to OGDF installation directory
+OGDF_INSTALL_PATH = C:/Users/gutwenger/Projekte/OGDF
