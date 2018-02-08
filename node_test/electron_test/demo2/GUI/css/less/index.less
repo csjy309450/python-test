@@ -1,0 +1,98 @@
+@import "config.less";
+
+.part1 {
+  .el-col-6 {
+    &:nth-child(1) {
+      .iconfont {
+        color: #1388FF;
+      }
+      .content p {
+        color: #1388FF;
+      }
+    }
+    &:nth-child(2) {
+      .iconfont {
+        color: #09C2AA;
+      }
+      .content p {
+        color: #09C2AA;
+      }
+    }
+    &:nth-child(3) {
+      .iconfont {
+        color: #1CBE4E;
+      }
+      .content p {
+        color: #1CBE4E;
+      }
+    }
+    &:nth-child(4) {
+      .iconfont {
+        color: #FCB200;
+      }
+      .content p {
+        color: #FCB200;
+      }
+    }
+    .el-col-6 {
+      color: @gray;
+    }
+  }
+  .grid-content {
+    padding: 20px 15px;
+    border: 1px solid @borderColor;
+    display: table;
+    width: 100%;
+    .iconfont {
+      width: 40px;
+      font-size: 40px;
+      vertical-align: middle;
+      padding-right: 20px;
+    }
+    .content, .iconfont {
+      display: table-cell;
+    }
+    p {
+      display: block;
+      font-size: 30px;
+    }
+    &:last-child {
+      margin-right: 0px;
+    }
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+}
+@media only screen and (max-width: 1366px) {
+  .part1 .grid-content .iconfont {
+    padding-right: 15px;
+  }
+}
+
+.portlet {
+  border: 1px solid @borderColor;
+  .portlet-title {
+    padding: 10px 20px;
+    border-bottom: 1px solid @borderColor;
+    a {
+      color: @black;
+    }
+  }
+  .portlet-body {
+    padding: 20px;
+    height: 200px;
+  }
+  .echarts1 {
+    overflow: hidden;
+    height: 400px;
+  }
+}
+.part2 .el-col-6 {
+  padding-right: 20px;
+  &:last-child {
+    padding-right: 0px;
+  }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+<!-- 引入组件库 -->
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+
+
+</head>
+<body>
+	<div id="app">
+    	<el-button @click="visible = true">按钮</el-button>
+    	<el-dialog :visible.sync="visible" title="Hello world">
+			<p>欢迎使用 Element</p>
+    	</el-dialog>
+	</div>
+	<p>段落1</p>
+	<h1>大标题2</h1>
+	<div id="add">
+	  	<input type="number" id="input1">
+	  	<input type="number" id="input2">
+	  	<button onclick="func_add()">=</button>
+		<input type="number" id="input3" disabled>
+	</div>
+	<div id="min">
+	  	<input type="number" id="input4">
+	  	<input type="number" id="input5">
+	  	<button onclick="func_min()">=</button>
+		<input type="number" id="input6" disabled>
+	</div>
+
+<script>
+	var addon = require('bindings')('modular_test');
+	function func_add() {
+		var a = document.getElementById("input1");
+		var b = document.getElementById("input2");
+		document.getElementById("input3").value=addon.add(a.value, b.value);
+	}
+	function func_min() {
+		var a = document.getElementById("input4");
+		var b = document.getElementById("input5");
+		document.getElementById("input6").value=addon.min(a.value, b.value);
+	}
+
+new Vue({
+	el: '#app',
+	data: function() {
+		return { visible: false }
+	}
+})
+</script>
+</body>
+
+</html>

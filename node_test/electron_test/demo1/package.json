@@ -1,0 +1,14 @@
+{
+	"name": "demo1",
+	"version": "0.0.0",
+	"description": "node.js native addon",
+	"main": "index.js",
+	"private": true,
+	"scripts": {
+		"start": "node index.js"
+	},
+	"gypfile": true,
+	"dependencies": {
+		"bindings": "^1.3.0"
+	}
+}
