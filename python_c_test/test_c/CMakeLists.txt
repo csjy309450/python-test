@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.2)
+project(test_c)
+set(SRC test_c.c)
+add_compile_options(-shared -fpic)
+add_library(test_c SHARED ${SRC})
