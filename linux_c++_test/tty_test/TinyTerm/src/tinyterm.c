@@ -101,6 +101,8 @@ main (int argc, char *argv[])
     GdkPixbuf *icon;
     GdkGeometry geo_hints;
 
+    g_print("%d.%d.%d\n",VTE_MAJOR_VERSION,VTE_MINOR_VERSION,VTE_MICRO_VERSION);
+
     /* Init gtk and all widgets */
     gtk_init (&argc, &argv);
     window = gtk_window_new (GTK_WINDOW_TOPLEVEL);
