@@ -1,0 +1,2 @@
+[submodule "caffe_test/fcn.berkeleyvision.org"]
+	url = https://github.com/csjy309450/fcn.berkeleyvision.org.git
